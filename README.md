@@ -38,3 +38,5 @@ Alla fonter finns på Google Fonts
 ### Logga
 ![image](https://github.com/user-attachments/assets/38c64a8c-cb97-4976-a84e-786764fbb709)
 
+### Bildgalleri
+Alla bilder ligger i assets mappen
