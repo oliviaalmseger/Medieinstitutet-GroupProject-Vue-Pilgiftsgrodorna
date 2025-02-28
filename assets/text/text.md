@@ -42,4 +42,4 @@ Du hittade grodan!
 | Förnamn   | *Skriv ditt förnamn här*   |
 | Efternamn | *Skriv ditt efternamn här* |
 | E-post    | *Skriv din e-post här*     |
-| Förnamn   |                            |
+| Meddelande|                            |
