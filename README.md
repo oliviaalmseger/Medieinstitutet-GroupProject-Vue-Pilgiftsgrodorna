@@ -10,10 +10,10 @@ Det här projektet är resultatet av ett samarbete mellan två team: **Pilgiftsg
 Tillsammans har vi skapat en genomtänkt och välfungerande webbplats!
 
 ## Pilgiftsgrodorna
-- @angien90
-- @tgvie
-- @M-Lenvik
-- @DavidBrunni
+- [angien90](https://github.com/angien90)
+- [tgvie](https://github.com/tgvie)
+- [M-Lenvik](https://github.com/M-Lenvik)
+- [DavidBrunni](https://github.com/DavidBrunni)
 
 ## Surikatera
 - @
