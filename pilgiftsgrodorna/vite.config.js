@@ -1,7 +1,5 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-
-// https://vite.dev/config/
+import { defineConfig } from "vite";
+ 
 export default defineConfig({
-  plugins: [vue()],
-})
+  base: "/fed24d-grafiska-verktyg-pilgiftsgrodorna/",
+});
