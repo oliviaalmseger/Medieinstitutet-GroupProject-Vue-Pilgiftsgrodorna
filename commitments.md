@@ -28,6 +28,10 @@ Kontraktet kan komma att ändras/byggas på i samband med start av kodsprinten.
 - Vi har dagliga avstämmningar klockan 9, om inget annat sägs, 
 - Vi gör backlog och sprintplanering tillsammans i vårt projekt på github projects
 - Tidsplan: sprint 1 (första veckan) innehåller majoritet av kodandet. Vi siktar på att koden ska vara   färdig tisdag den 11 mars. Onsdag den 12 planerar vi presentation, och städar i repot. Torsdag presenterar vi och resterande tid planerar vi efter hur mycket vi har kvar. 
-- **Linting- och prettier-konfiguration: vi använder camelCase, trailing commas, Require curly braces for all control statements, varning för console.log, single quotes, tabwidth = 4, semi-kolon tas bort om valfritt.
-- Branches och pushar/merges beslut
-- Vi gör conventional commits på engelska och använder gitmojis om möjligt ex--> type[optional scope]: description** 
+
+- Vi jobbar alltid mot en developbranch som vi sen mergar till main efter ett gemensamt beslut
+- 2 personer granskar pull requests, den andra granskaren mergear. 
+- Vi raderar branches efter merge (den andra granskaren raderar efter merge)
+- Vi jobbar i branches som vi skapar från issues som vi sparar från våra projektdelar i projects
+- Linting- och prettier-konfiguration: vi använder camelCase, trailing commas, Require curly braces for all control statements, varning för console.log, single quotes, tabwidth = 4, semi-kolon tas bort om valfritt.
+- Vi gör conventional commits på engelska och använder gitmojis om möjligt ex--> type[optional scope]: description
