@@ -1,14 +1,23 @@
 <script setup>
+import { RouterView, RouterLink } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
-import StartPageView from "./views/StartPageView.vue";
+
 </script>
 
 
 <template>
-  <StartPageView />
 
   <HelloWorld msg="Vite + Vue" />
-  <StartPageView />
+
+  <div>
+    <nav>
+      <RouterLink to="/start">Start</RouterLink> 
+    </nav>
+  </div>
+  <div>
+    <RouterView />
+  </div>
+  
 </template>
 
 
