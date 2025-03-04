@@ -1,11 +1,11 @@
-@use "./partials/_partials";
+@use './partials/_partials';
 
-@import "base.scss";
+@import 'base.scss';
 
 @media (min-width: 834px) {
-  @import "tablet.scss";
+    @import 'tablet.scss';
 }
 
 @media (min-width: 1280px) {
-  @import "desktop.scss";
+    @import 'desktop.scss';
 }

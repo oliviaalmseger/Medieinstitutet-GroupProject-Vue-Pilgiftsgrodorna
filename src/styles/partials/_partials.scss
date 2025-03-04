@@ -1,2 +1,2 @@
-@use "./_typography.scss";
-@use "./_colors.scss";
+@forward '_variables.scss';
+@forward '_typography.scss';

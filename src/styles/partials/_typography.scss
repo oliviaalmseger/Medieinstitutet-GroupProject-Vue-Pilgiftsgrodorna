@@ -1,15 +1,34 @@
+@use '_variables.scss' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Luckiest+Guy&family=RocknRoll+One&display=swap');
 
-$h1-font: 'Luckiest Guy', sans-serif;
-$h2-font: 'RocknRoll', sans-serif;
-$h3-font: 'RocknRoll', sans-serif;
-$p-font: 'Gantari', sans-serif;
-$button-font: 'Luckiest Guy', sans-serif;
-$link-font: 'Gantari', sans-serif;
+p {
+    font-family: $p-font;
+    font-size: $p-fontsize;
+}
 
-$h1-fontsize: 32px;
-$h2-fontsize: 20px;
-$h3-fontsize: 16px;
-$p-fontsize: 16px;
-$button-fontsize: 20px;
-$link-fontsize: 16px;
+h1 {
+    font-family: $h1-font;
+    font-size: $h1-fontsize;
+}
+
+h2 {
+    font-family: $h2-font;
+    font-size: $h2-fontsize;
+}
+
+h3 {
+    font-family: $h3-font;
+    font-size: $h3-fontsize;
+}
+
+button {
+    font-family: $button-font;
+    font-size: $button-fontsize;
+}
+
+a,
+li {
+    font-family: $link-font;
+    font-size: $link-fontsize;
+}
