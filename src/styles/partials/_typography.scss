@@ -28,7 +28,10 @@ button {
 }
 
 a,
-li {
+li,
+nav {
     font-family: $link-font;
     font-size: $link-fontsize;
+    color: $text-color;
+    text-decoration: none;
 }
