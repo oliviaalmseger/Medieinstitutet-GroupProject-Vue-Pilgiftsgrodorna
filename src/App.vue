@@ -1,14 +1,20 @@
-<script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import StartPageView from "./views/StartPageView.vue";
+<script setup lang="js">
+import { RouterView, RouterLink } from "vue-router";
+
+
 </script>
 
 
 <template>
-  <StartPageView />
+  <header>
+    <nav>
+      <RouterLink to="/start">Hem</RouterLink>
+      <RouterLink to="/startGame">Spela</RouterLink>
+    </nav>
+  </header>
 
-  <HelloWorld msg="Vite + Vue" />
-  <StartPageView />
+  <RouterView />
+
 </template>
 
 

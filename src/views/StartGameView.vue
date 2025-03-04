@@ -2,8 +2,7 @@
 </script>
 
 <template>
-    <div class="background"></div>
-    <h1>Info om spel sida</h1>
+    <div class="background">Info om spel</div>
 </template>
 
 <style scoped>
