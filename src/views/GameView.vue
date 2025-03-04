@@ -7,13 +7,18 @@ const frogIsFound = ref(false);
 function foundFrog(){
     frogIsFound.value=true;
 }
+
+function hideFrog(){
+    frogIsFound.value=false;
+}
+
 </script>
 
 <template>
     <div class="background">
         <h1>Spelsida</h1>
     </div>
-    <div class="frog" v-on:mouseover="foundFrog"></div>
+    <div class="frog" v-on:mouseover="foundFrog" v-on:mouseleave="hideFrog"></div>
 
 <div v-if="frogIsFound" >
     <p>Yay you found the frog!</p>
