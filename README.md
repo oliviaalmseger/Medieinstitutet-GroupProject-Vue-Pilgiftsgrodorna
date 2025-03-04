@@ -16,10 +16,11 @@ Tillsammans har vi skapat en genomtänkt och välfungerande webbplats!
 - [DavidBrunni](https://github.com/DavidBrunni)
 
 ## Surikatera
-- @
-- @
-- @
-- @
+- [Olivia Almseger](https://github.com/oliviaalmseger)
+- [Moa Magnfors](https://github.com/mainforce)
+- [Nicole Sjöberg-Silfverling](https://github.com/nicolesilfverling)
+- [Alice Swahn](https://github.com/aliceswahn)
+- [Agnes Wilson](https://github.com/agneswilson)
 
 ## Design underlag
 ### Textsnitt
