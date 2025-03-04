@@ -9,6 +9,11 @@
                 name: 'start',
                 component: StartPageView,
             },
+            {
+                path: '/startGame',
+                name: 'start-game',
+                component: () => import('../views/StartGameView.vue'),
+            },
         ],
     })
 
