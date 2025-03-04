@@ -18,9 +18,11 @@ function hideFrog(){
     <div class="background">
         <h1>Spelsida</h1>
     </div>
-    <div class="frog" v-on:mouseover="foundFrog" v-on:mouseleave="hideFrog"></div>
+    <div class="frog" v-on:mouseover="foundFrog" v-on:mouseleave="hideFrog">
+        <img src="../assets/figma_components/logo.png">
+    </div>
 
-<div v-if="frogIsFound" >
+<div class="message" v-if="frogIsFound" >
     <p>Yay you found the frog!</p>
 </div>
 </template>
@@ -32,17 +34,29 @@ function hideFrog(){
     height: 100px;
 }
 .frog {
-    background-color: red;
-    width: 40px;
-    height: 40px;
     opacity: 0;
-
+    width: 100px;
+    height: 100px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 .frog:hover {
     opacity: 100;
 }
-p{
-    background-color: antiquewhite;
+
+
+.message {
+    color: #EAE0C8;
+    background-color: rgba(0, 0, 0, 0.80);
+    border-radius: 22.76px;
+    border: 3px solid rgba(255, 39, 0, 0.80);
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 </style>
