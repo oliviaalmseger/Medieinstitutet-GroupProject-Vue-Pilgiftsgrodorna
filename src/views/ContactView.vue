@@ -26,5 +26,13 @@
 </div>
 </template>
 
-<script>
+<script setup>
+import { reactive } from "vue";
+
+const form = reactive({
+  firstName: "",
+  lastName: "",
+  email: "",
+  message: "",
+});
 </script>
