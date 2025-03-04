@@ -1,0 +1,38 @@
+@use '_variables.scss' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Luckiest+Guy&family=RocknRoll+One&display=swap');
+
+p {
+    font-family: $p-font;
+    font-size: $p-fontsize;
+}
+
+h1 {
+    font-family: $h1-font;
+    font-size: $h1-fontsize;
+}
+
+h2 {
+    font-family: $h2-font;
+    font-size: $h2-fontsize;
+}
+
+h3 {
+    font-family: $h3-font;
+    font-size: $h3-fontsize;
+}
+
+button {
+    font-family: $button-font;
+    font-size: $button-fontsize;
+}
+
+a,
+li,
+nav {
+    font-family: $link-font;
+    font-size: $link-fontsize;
+    color: $text-color;
+    text-decoration: none;
+    cursor: pointer;
+}
