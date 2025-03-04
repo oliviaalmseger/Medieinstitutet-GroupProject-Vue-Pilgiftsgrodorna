@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from "./components/HelloWorld.vue";
 import StartPageView from "./views/StartPageView.vue";
+import ContactView from "./views/ContactView.vue";
 </script>
 
 
@@ -9,6 +10,7 @@ import StartPageView from "./views/StartPageView.vue";
 
   <HelloWorld msg="Vite + Vue" />
   <StartPageView />
+  <ContactView />
 </template>
 
 
