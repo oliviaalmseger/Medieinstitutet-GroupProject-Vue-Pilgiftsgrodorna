@@ -5,6 +5,10 @@ import { RouterLink } from "vue-router"
 
 <template>
     <header>
+
+    <img class="logo" src="../assets/figma_components/full-logo.svg" 
+    alt="Logga föreställande en blåsvart groda sittandes på en träplanka med texten Pilgiftsgrodan i samma färg som grodan på.">
+        
     <nav>
         <div class="nav-bg">
             <RouterLink class="nav-btn" to="/start">Hem</RouterLink>
@@ -23,10 +27,19 @@ import { RouterLink } from "vue-router"
 
 <style scoped lang="scss">
 header {
-    display: flex; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 100vw;
+    
+    
+    .logo {
+        display: inline-block;
+        width: 288px;
+        height: auto;
+        margin-bottom: 15px;
+    }
 
     .nav-bg {
         background-image: url(../assets/figma_components/nav-button.png);
@@ -34,24 +47,26 @@ header {
         background-position: center;
         width: 90px;
         height: 30px;
-        alt: "white plank with rounded corners acting as a background to the navigation buttons";
+        alt: "White plank with rounded corners acting as a background to the navigation buttons"; //Dubbelkolla alttext vid tillfälle
 
         display: inline-block;
         margin-inline: 5px;
-    
 
         .nav-btn {
         padding-top: 5px;
         display: flex;
         justify-content: center;
-        padding-top: 9px;
-
         
         font-family: $link-font;
         font-size: $link-fontsize;
         color: $text-color;
         text-decoration: none;
         cursor: pointer;
+
+            &:hover {
+                font-weight: 400;
+                color:$detail-color; 
+            }
         }
     }
 }
