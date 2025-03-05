@@ -13,39 +13,39 @@ defineProps({
 </template>
 
 <style scoped lang="scss">
-section {
+.info-card {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 320px;
-    background-color: $card-background-color;
-    border-radius: 22px;
-    border: 4px solid $border-color;
-    padding: 2rem 2.5rem;
+    width: 300px;
+    padding: 1.5rem 1.5rem 0 1.5rem;
 
     h3 {
         margin-bottom: 1rem;
     }
+
+    p {
+        margin-bottom: 2.5rem;
+    }
 }
 
 @media (min-width: 834px) {
-    section {
-        max-width: 620px;
+    .info-card {
+        width: 620px;
         padding: 2rem 3rem;
 
-        border: 8px solid $border-color;
-
-        h3 {
+        p {
             margin-bottom: 1.5rem;
         }
     }
 }
 
 @media (min-width: 1280px) {
-    section {
+    .info-card {
         width: 320px;
         height: 270px;
-        padding: 1rem 1rem;
+        padding: 1.5rem 1rem 0 1rem;
+        margin-bottom: 20px;
+        margin-right: 8px;
     }
 }
 </style>
