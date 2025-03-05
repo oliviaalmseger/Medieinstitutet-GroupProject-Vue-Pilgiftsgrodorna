@@ -26,3 +26,12 @@ import InfoCard from './InfoCard.vue';
         />
     </article>
 </template>
+
+<style scoped lang="scss">
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin: 0 0.5rem;
+}
+</style>
