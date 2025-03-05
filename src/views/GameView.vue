@@ -29,7 +29,7 @@ function hideFrog() {
             <p>Du hittade grodan!</p>
         </div>
         <div class="frog" v-on:mouseover="foundFrog" v-on:mouseleave="hideFrog">
-            <img src="../assets/figma_components/logo.png" />
+            <img src="../assets/figma_components/logo.png" alt="Groda för spelet 'Hitta grodan'"/>
         </div>
     </div>
 </template>
