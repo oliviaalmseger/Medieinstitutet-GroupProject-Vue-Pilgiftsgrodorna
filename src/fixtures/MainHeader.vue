@@ -12,7 +12,7 @@ import { RouterLink } from 'vue-router';
 
         <nav>
             <div class="nav-bg">
-                <RouterLink class="nav-btn" to="/start">Hem</RouterLink>
+                <RouterLink class="nav-btn" to="/">Hem</RouterLink>
             </div>
 
             <div class="nav-bg">
