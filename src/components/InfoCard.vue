@@ -17,7 +17,7 @@ defineProps({
     display: flex;
     flex-direction: column;
     width: 300px;
-    padding: 1.5rem 1.5rem 0 1.5rem;
+    padding: 1.5rem;
 
     h3 {
         margin-bottom: 1rem;
