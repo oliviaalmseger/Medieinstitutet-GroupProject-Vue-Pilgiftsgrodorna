@@ -1,16 +1,13 @@
 <script setup lang="js">
-import { RouterView, RouterLink } from "vue-router";
+import { RouterView } from 'vue-router';
 import CookieBanner from "./components/CookieBanner.vue";
+import MainHeader from './fixtures/MainHeader.vue';
+
 </script>
 
 <template>
-  <header>
-    <nav>
-      <RouterLink to="/start">Hem</RouterLink>
-      <RouterLink to="/startGame">Spela</RouterLink>
-      <RouterLink to="/contactView">Kontakt</RouterLink>
-    </nav>
-  </header>
+
+  <MainHeader />
   <CookieBanner />
   <RouterView />
 </template>
