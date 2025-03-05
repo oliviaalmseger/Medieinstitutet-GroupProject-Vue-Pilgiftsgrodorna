@@ -5,6 +5,7 @@
 p {
     font-family: $p-font;
     font-size: $p-fontsize;
+    line-height: 25px;
 }
 
 h1 {
@@ -27,12 +28,19 @@ button {
     font-size: $button-fontsize;
 }
 
+p,
+h1,
+h2,
+h3 {
+    color: $text-color;
+}
+
 a,
 li,
 nav {
     font-family: $link-font;
     font-size: $link-fontsize;
-    color: $text-color;
+    color: $button-link-text-color;
     text-decoration: none;
     cursor: pointer;
 }
