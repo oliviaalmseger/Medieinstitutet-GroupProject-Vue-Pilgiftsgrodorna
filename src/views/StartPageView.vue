@@ -1,12 +1,7 @@
-<script setup lang="js"> 
+<script setup lang="js">
+import CardArticle from '../components/CardArticle.vue';
 </script>
 
 <template>
-    <div class="background">Startsida</div>
+    <CardArticle />
 </template>
-
-<style scoped>
-    .background {
-        background-color: lightgreen;
-    }
-</style>
