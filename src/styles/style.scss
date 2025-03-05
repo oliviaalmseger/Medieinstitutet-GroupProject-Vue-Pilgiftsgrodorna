@@ -1,0 +1,11 @@
+@import 'partials/partials.scss';
+
+@import 'base.scss';
+
+@media (min-width: 834px) {
+    @import 'tablet.scss';
+}
+
+@media (min-width: 1280px) {
+    @import 'desktop.scss';
+}

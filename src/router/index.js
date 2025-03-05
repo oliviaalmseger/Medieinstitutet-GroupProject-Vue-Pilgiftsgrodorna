@@ -11,9 +11,9 @@
                 component: StartPageView,
             },
             {
-                path: '/contact',
-                name: 'contact',
-                component: ContactView,
+                path: '/startGame',
+                name: 'start-game',
+                component: () => import('../views/StartGameView.vue'),
             },
         ],
     })
