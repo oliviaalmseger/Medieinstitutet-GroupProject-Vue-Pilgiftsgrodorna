@@ -20,8 +20,8 @@ section {
     max-width: 320px;
     background-color: $card-background-color;
     border-radius: 22px;
-    border: 3px solid $border-color;
-    padding: 2rem 1.9rem;
+    border: 4px solid $border-color;
+    padding: 2rem 2.5rem;
 
     h3 {
         margin-bottom: 1rem;
@@ -32,6 +32,12 @@ section {
     section {
         max-width: 620px;
         padding: 2rem 3rem;
+
+        border: 8px solid $border-color;
+
+        h3 {
+            margin-bottom: 1.5rem;
+        }
     }
 }
 
@@ -39,7 +45,7 @@ section {
     section {
         width: 320px;
         height: 270px;
-        padding: 2rem 1.5rem;
+        padding: 1rem 1rem;
     }
 }
 </style>
