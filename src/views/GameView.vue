@@ -64,7 +64,7 @@ function hideFrog() {
 }
 
 .message {
-    color: $button-link-text-color;
+    color: $text-color;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 22.76px;
     border: 3px solid $detail-color;
