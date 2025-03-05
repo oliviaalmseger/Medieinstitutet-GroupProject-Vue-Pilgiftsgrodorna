@@ -56,38 +56,4 @@ header {
     }
 }
 
-
-
-
-// header {
-//     display: flex; 
-//     justify-content: center;
-//     align-items: center;
-
-//     .nav-bg {
-//         background-image: url(../assets/figma_components/nav-button.png);
-//         background-size: cover; 
-//         background-position: center;
-//         width: 90px;
-//         height: 30px;
-//         alt: "white plank with rounded corners acting as a background to the navigation buttons";
-        
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         flex-direction: row;
-
-//         .nav-btn {
-//         padding-top: 5px;
-//         display: flex;
-        
-//         font-family: $link-font;
-//         font-size: $link-fontsize;
-//         color: $text-color;
-//         text-decoration: none;
-//         cursor: pointer;
-//         }
-//     }
-// }
-
 </style>
