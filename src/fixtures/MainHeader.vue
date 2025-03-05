@@ -61,7 +61,7 @@ header {
 
             font-family: $link-font; 
             font-size: $link-fontsize;
-            color: $text-color;
+            color: $link-color;
             text-decoration: none;
             cursor: pointer;
 

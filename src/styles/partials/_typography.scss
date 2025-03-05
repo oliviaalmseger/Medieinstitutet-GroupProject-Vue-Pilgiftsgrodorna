@@ -35,7 +35,7 @@ h3 {
     color: $text-color;
 }
 
-h3 {
+h3 { 
     font-weight: 100;
 }
 
@@ -43,8 +43,6 @@ a,
 li,
 nav {
     font-family: $link-font;
-    font-size: $link-fs-mobile;
-    color: $button-link-text-color;
     text-decoration: none;
     cursor: pointer;
 }
@@ -65,12 +63,6 @@ nav {
     h3 {
         font-size: $h3-fs-tablet;
     }
-
-    a,
-    li,
-    nav {
-        font-size: $link-fs-tablet;
-    }
 }
 
 @media (min-width: 1280px) {
@@ -88,11 +80,5 @@ nav {
 
     h3 {
         font-size: $h3-fs-desktop;
-    }
-
-    a,
-    li,
-    nav {
-        font-size: $link-fs-desktop;
     }
 }
