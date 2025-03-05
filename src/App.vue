@@ -7,6 +7,7 @@ import { RouterView, RouterLink } from "vue-router";
     <nav>
       <RouterLink to="/start">Hem</RouterLink>
       <RouterLink to="/startGame">Spela</RouterLink>
+      <RouterLink to="/contactView">Kontakt</RouterLink>
     </nav>
   </header>
 
