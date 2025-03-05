@@ -16,3 +16,9 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+
+article {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
