@@ -1,7 +1,24 @@
-:root {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 100%;
+
     background-image: url('../assets/figma_components/main-background.jpg');
-    background-size: auto 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+
+article {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }
