@@ -6,12 +6,27 @@ $p-font: 'Gantari', sans-serif;
 $button-font: 'Luckiest Guy', sans-serif;
 $link-font: 'Luckiest Guy', sans-serif;
 
-$h1-fontsize: 32px;
-$h2-fontsize: 20px;
-$h3-fontsize: 20px;
-$p-fontsize: 16px;
-$button-fontsize: 20px;
-$link-fontsize: 18px;
+// Font-sizes (mobile)
+$h1-fs-mobile: 32px;
+$h2-fs-mobile: 20px;
+$h3-fs-mobile: 20px;
+$p-fs-mobile: 16px;
+$button-fs: 20px;
+$link-fs-mobile: 18px;
+
+// Font-sizes (tablet)
+$h1-fs-tablet: 48px;
+$h2-fs-tablet: 32px;
+$h3-fs-tablet: 23px;
+$p-fs-tablet: 20px;
+$link-fs-tablet: 32px;
+
+// Font-sizes (desktop)
+$h1-fs-desktop: 48px;
+$h2-fs-desktop: 32px;
+$h3-fs-desktop: 25px;
+$p-fs-desktop: 20px;
+$link-fs-desktop: 32px;
 
 // Color variables
 $text-color: #eae0c8;
