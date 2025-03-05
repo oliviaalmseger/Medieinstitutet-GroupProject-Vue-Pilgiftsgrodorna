@@ -1,5 +1,6 @@
 <script setup lang="js">
 import { RouterView, RouterLink } from "vue-router";
+import CookieBanner from "./components/CookieBanner.vue";
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import { RouterView, RouterLink } from "vue-router";
       <RouterLink to="/contactView">Kontakt</RouterLink>
     </nav>
   </header>
-
+  <CookieBanner />
   <RouterView />
 </template>
 

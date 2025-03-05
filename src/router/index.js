@@ -19,6 +19,11 @@
                 name: 'contact-view',
                 component: () => import('../views/ContactView.vue'),
             },
+            {
+                path: '/cookieBanner',
+                name: 'cookie-banner',
+                component: () => import('../components/CookieBanner.vue'),
+            },
         ],
     })
 
