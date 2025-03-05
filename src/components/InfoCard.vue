@@ -14,10 +14,10 @@ defineProps({
 
 <style scoped lang="scss">
 section {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    max-width: 320px;
     background-color: $card-background-color;
     border-radius: 22px;
     border: 3px solid $border-color;
@@ -25,6 +25,21 @@ section {
 
     h3 {
         margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 834px) {
+    section {
+        max-width: 620px;
+        padding: 2rem 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    section {
+        width: 320px;
+        height: 270px;
+        padding: 2rem 1.5rem;
     }
 }
 </style>
