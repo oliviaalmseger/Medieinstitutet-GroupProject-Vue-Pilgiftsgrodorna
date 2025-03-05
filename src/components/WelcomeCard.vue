@@ -63,6 +63,11 @@
 
         a {
             $link-fontsize: 1.125rem;
+
+            &:hover {
+                color: $detail-color;
+                cursor: not-allowed;
+            }
         }
     }
 }
