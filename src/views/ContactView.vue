@@ -82,7 +82,7 @@ const resetForm = () => {
                     ></textarea>
                 </div>
 
-                <button type="submit" :disabled="!isFormValid">Skicka</button>
+                <button type="submit" class="send-button":disabled="!isFormValid">Skicka</button>
             </fieldset>
         </form>
     </div>
@@ -116,6 +116,11 @@ fieldset {
     margin-bottom: 40px;
 }
 
+.contact-field:last-of-type {
+    margin-bottom: 24px;
+}
+
+
 input,
 textarea,
 button {
@@ -138,19 +143,25 @@ textarea {
     height: 80px;
 }
 
-button {
-    margin-top: 10px;
+.send-button {
+    background: url('/src/assets/figma_components/wood-sign-button.png')
+        no-repeat center / cover;
     border: none;
-    background-color: #007bff;
-    color: white;
+    width: 117px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    border-radius: 4px;
-    max-width: 98px;
+    text-align: center;
+    font-size: $h2-fs-mobile;
+    font-family: 'Luckiest Guy', sans-serif;
+    color: #000;
 }
 
 button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
+  cursor: not-allowed;
+  opacity: 0.5; 
 }
 
 .error {
@@ -176,5 +187,4 @@ button:disabled {
         margin-bottom: 120px;
     }
 }
-
 </style>
