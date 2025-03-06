@@ -1,3 +1,13 @@
+<script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const startGame = () => {
+    router.push('/game');
+};
+</script>
+
 <template>
     <main>
         <div class="infogame-container">
@@ -15,7 +25,7 @@
                 />
 
                 <div class="start-game-btn">
-                    <button>Starta spelet</button>
+                    <button @click="startGame">Starta spelet</button>
                 </div>
             </section>
         </div>

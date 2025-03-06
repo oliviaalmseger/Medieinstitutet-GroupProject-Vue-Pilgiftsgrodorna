@@ -1,6 +1,13 @@
 <script setup>
 import InfoCard from './InfoCard.vue';
 import WelcomeCard from './WelcomeCard.vue';
+import { ref } from 'vue';
+
+const targetReadMore = ref(null);
+
+defineExpose({
+    targetReadMore,
+});
 </script>
 
 <template>
@@ -9,6 +16,7 @@ import WelcomeCard from './WelcomeCard.vue';
             <WelcomeCard />
             <article class="infocard-container">
                 <InfoCard
+                    ref="targetReadMore"
                     heading="Visste du att?"
                     content="Grodornas gift kommer från insekter som grodorna äter. Om man har en pilgiftsgroda i fångenskap och ger den annan mat så blir den mindre giftig."
                 />
