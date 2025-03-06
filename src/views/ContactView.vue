@@ -1,38 +1,196 @@
-<script setup lang="js">
-import { reactive } from "vue";
+<script setup>
+import { ref, computed } from 'vue';
 
-const form = reactive({
-  firstName: "",
-  lastName: "",
-  email: "",
-  message: "",
-});
+const firstName = ref('');
+const lastName = ref('');
+const email = ref('');
+const message = ref('');
+
+const isValidEmail = () => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
+
+const isFormValid = computed(
+    () => firstName.value && lastName.value && isValidEmail() && message.value
+);
+
+const handleSubmit = (event) => {
+    event.preventDefault();
+    if (isFormValid.value) {
+        alert('Formuläret har skickats!');
+        resetForm();
+    }
+};
+
+const resetForm = () => {
+    firstName.value = '';
+    lastName.value = '';
+    email.value = '';
+    message.value = '';
+};
 </script>
 
 <template>
-<div class="contact">
-    <form>
-      <div>
-        <label for="firstName">Förnamn</label>
-        <input type="text" id="firstName" v-model="form.firstName" required/>
-      </div>
+    <div class="contact-card">
+        <form @submit="handleSubmit">
+            <fieldset>
+                <div class="contact-field">
+                    <label for="firstName">Förnamn</label>
+                    <input
+                        type="text"
+                        id="firstName"
+                        v-model="firstName"
+                        autocomplete="given-name"
+                        required
+                        placeholder="Skriv ditt förnamn här"
+                    />
+                </div>
 
-      <div>
-        <label for="lastName">Efternamn</label>
-        <input type="text" id="lastName" v-model="form.lastName" required/>
-      </div>
+                <div class="contact-field">
+                    <label for="lastName">Efternamn</label>
+                    <input
+                        type="text"
+                        id="lastName"
+                        v-model="lastName"
+                        autocomplete="family-name"
+                        required
+                        placeholder="Skriv ditt efternamn här"
+                    />
+                </div>
 
-      <div>
-        <label for="email">E-post</label>
-        <input type="email" id="email" v-model="form.email" required/>
-      </div>
+                <div class="contact-field">
+                    <label for="email">E-post</label>
+                    <input
+                        type="email"
+                        id="email"
+                        v-model="email"
+                        autocomplete="email"
+                        required
+                        :class="{ error: !isValidEmail() && email }"
+                        placeholder="Skriv din e-post här"
+                    />
+                    <p v-if="!isValidEmail() && email" class="error-message">
+                        Ange en giltig e-postadress.
+                    </p>
+                </div>
 
-      <div>
-        <label for="message">Meddelande</label>
-        <textarea id="message" v-model="form.message" required></textarea>
-      </div>
+                <div class="contact-field">
+                    <label for="message">Meddelande</label>
+                    <textarea
+                        id="message"
+                        v-model="message"
+                        required
+                        placeholder="Skriv ditt meddelande här"
+                    ></textarea>
+                </div>
 
-      <button type="submit">Skicka</button>
-    </form>
-</div>
+                <button
+                    type="submit"
+                    class="send-button"
+                    :disabled="!isFormValid"
+                >
+                    Skicka
+                </button>
+            </fieldset>
+        </form>
+    </div>
 </template>
+
+<style scoped lang="scss">
+.contact-card {
+    margin: auto;
+    font-family: $p-font;
+    color: $text-color;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-field {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 40px;
+}
+
+.contact-field:last-of-type {
+    margin-bottom: 24px;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    font-family: $p-font;
+}
+
+input,
+textarea {
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #616161;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.send-button {
+    background: url('/src/assets/figma_components/wood-sign-button.png')
+        no-repeat center / cover;
+    border: none;
+    width: 117px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    font-size: $h2-fs-mobile;
+    font-family: 'Luckiest Guy', sans-serif;
+    color: #000;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.error {
+    border-color: $detail-color;
+}
+
+.error-message {
+    color: $detail-color;
+    font-size: $p-fs-mobile;
+}
+
+@media (min-width: 834px) {
+    .contact-card {
+        margin-top: 120px;
+        margin-bottom: 287px;
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .contact-card {
+        max-width: 825px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+}
+</style>
