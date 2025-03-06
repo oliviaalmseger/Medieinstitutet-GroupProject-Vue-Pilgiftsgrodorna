@@ -2,48 +2,43 @@
     .blue-frog {
         width: 100px;
         height: auto;
-
         position: absolute;
-        left: 200px;
-        top: 5px;
+        left: 180px;
+        top: -28px;
     }
 
     .purple-frog {
-        transform: scaleX(-1); 
-        width: 100px;
-        height: auto;
-
-        position: absolute;
-        left: 355px;
-        top: 1117px;
-    }
-
-        .yellow-blue-frog {
         transform: scaleX(-1);
         width: 120px;
         height: auto;
-
         position: absolute;
-        left: 130px;
-        bottom: 978px;
+        left: 182px;
+        top: 138px;
+    }
+
+    .yellow-blue-frog {
+        transform: scaleX(-1);
+        width: 140px;
+        height: auto;
+        position: absolute;
+        left: -15px;
+        bottom: 220px;
     }
 
     .red-frog {
         transform: scaleX(-1); 
         width: 170px;
         height: auto;
-
         position: absolute;
-        left: 290px;
-        bottom: 365px;
+        left: 145px;
+        bottom: -53px;
     }
 
     .yellow-frog {
-        width: 110px;
+        width: 115px;
         height: auto;
-
         position: absolute;
-        left: 150px;
-        bottom: 325px;        
+        left: -10px;
+        bottom: 220px;        
     }
 }
