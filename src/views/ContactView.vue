@@ -82,7 +82,13 @@ const resetForm = () => {
                     ></textarea>
                 </div>
 
-                <button type="submit" class="send-button":disabled="!isFormValid">Skicka</button>
+                <button
+                    type="submit"
+                    class="send-button"
+                    :disabled="!isFormValid"
+                >
+                    Skicka
+                </button>
             </fieldset>
         </form>
     </div>
@@ -96,7 +102,7 @@ const resetForm = () => {
     font-size: 1.125rem;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    max-width: 300px;
     padding: 1.5rem;
     margin-top: 40px;
     margin-bottom: 80px;
@@ -119,7 +125,6 @@ fieldset {
 .contact-field:last-of-type {
     margin-bottom: 24px;
 }
-
 
 input,
 textarea,
@@ -160,8 +165,8 @@ textarea {
 }
 
 button:disabled {
-  cursor: not-allowed;
-  opacity: 0.5; 
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 .error {
@@ -177,12 +182,13 @@ button:disabled {
     .contact-card {
         margin-top: 120px;
         margin-bottom: 287px;
+        max-width: 350px;
     }
 }
 
 @media (min-width: 1280px) {
     .contact-card {
-        width: 825px;
+        max-width: 825px;
         margin-top: 120px;
         margin-bottom: 120px;
     }
