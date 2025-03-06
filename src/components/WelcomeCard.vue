@@ -13,7 +13,9 @@
                 class="blueyellow-frog"
             />
         </div>
-        <div class="read-more-btn"><a>Läs mer</a></div>
+        <div class="read-more-btn">
+            <button>Läs mer</button>
+        </div>
     </section>
 </template>
 
@@ -37,7 +39,7 @@
             width: 80px;
             height: auto;
             position: absolute;
-            left: 15px;
+            left: 10px;
             bottom: 25px;
         }
 
@@ -45,7 +47,7 @@
             width: 80px;
             height: auto;
             position: absolute;
-            right: 15px;
+            right: 10px;
             bottom: 20px;
         }
     }
@@ -57,17 +59,12 @@
         background-image: url(../assets/figma_components/wood-sign-button.png);
         background-size: contain;
         background-position: center;
-        width: 80px;
+        width: 100px;
         height: 40px;
         margin: 2rem 0rem 1rem 0rem;
 
-        a {
-            $link-fontsize: 1.125rem;
-
-            &:hover {
-                color: $detail-color;
-                cursor: not-allowed;
-            }
+        button {
+            font-size: 1rem;
         }
     }
 }
@@ -127,12 +124,22 @@
             margin-bottom: 1rem;
         }
 
-        .welcome-frogs {
+        .read-more-btn {
             display: none;
         }
 
-        .read-more-btn {
-            display: none;
+        .welcome-frogs {
+            .red-frog {
+                width: 200px;
+                left: 20px;
+                bottom: 30px;
+            }
+
+            .blueyellow-frog {
+                width: 200px;
+                right: 50px;
+                top: 30px;
+            }
         }
     }
 }

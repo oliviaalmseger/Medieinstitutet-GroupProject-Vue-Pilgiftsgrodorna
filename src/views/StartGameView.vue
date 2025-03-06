@@ -1,5 +1,7 @@
 <script setup lang="js">
+import InfoGameCard from '../components/InfoGameCard.vue';
 import { useRouter } from 'vue-router';
+
 const router = useRouter();
 
 const startGame = () => {
@@ -7,13 +9,8 @@ const startGame = () => {
 };
 </script>
 
+
 <template>
-    <div class="background">Info om spel</div>
+    <InfoGameCard />
     <button @click="startGame">Start Game</button>
 </template>
-
-<style scoped>
-.background {
-    background-color: yellowgreen;
-}
-</style>
