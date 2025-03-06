@@ -15,6 +15,12 @@
                 component: () => import('../views/StartGameView.vue'),
             },
             {
+                path: '/game',
+                name: 'game',
+                component: () => import('../views/GameView.vue'),
+
+            },
+            {
                 path: '/contactView',
                 name: 'contact-view',
                 component: () => import('../views/ContactView.vue'),

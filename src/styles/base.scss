@@ -28,6 +28,15 @@ body::before {
     z-index: -1;
 }
 
+.game-page::before {
+    background-image: url('../assets/figma_components/game-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+  
 .startpage-container {
     display: flex;
     justify-content: center;
