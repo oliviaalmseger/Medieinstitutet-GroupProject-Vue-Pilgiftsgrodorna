@@ -1,5 +1,4 @@
-<script setup lang="js">
-</script>
+<script setup lang="js"></script>
 
 <template>
     <div class="background">Info om spel</div>

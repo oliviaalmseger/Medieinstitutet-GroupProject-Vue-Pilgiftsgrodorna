@@ -1,5 +1,5 @@
-    import { createRouter, createWebHistory} from "vue-router";
-    import StartPageView from "../views/StartPageView.vue";
+    import { createRouter, createWebHistory} from 'vue-router';
+    import StartPageView from '../views/StartPageView.vue';
 
     const router = createRouter({
         history: createWebHistory(import.meta.env.BASE_URL), 

@@ -57,6 +57,7 @@
         background-image: url(../assets/figma_components/wood-sign-button.png);
         background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
         width: 80px;
         height: 40px;
         margin: 2rem 0rem 1rem 0rem;
