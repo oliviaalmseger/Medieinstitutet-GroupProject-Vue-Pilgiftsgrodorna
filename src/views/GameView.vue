@@ -3,7 +3,6 @@ import { ref } from 'vue';
 import { onMounted, onUnmounted } from 'vue';
 import PopUp from '../components/PopUp.vue';
 
-
 onMounted(() => {
     document.body.classList.add('game-page');
 });
@@ -26,10 +25,13 @@ function hideFrog() {
 <template>
     <div class="container">
         <div class="pop-up" v-if="frogIsFound">
-            <PopUp heading="Grattis!" content="Du hittade grodan!"/>
+            <PopUp heading="Grattis!" content="Du hittade grodan!" />
         </div>
         <div class="frog" v-on:mouseover="foundFrog" v-on:mouseleave="hideFrog">
-            <img src="../assets/figma_components/logo.png" alt="Groda för spelet 'Hitta grodan'"/>
+            <img
+                src="../assets/figma_components/logo.png"
+                alt="Groda för spelet 'Hitta grodan'"
+            />
         </div>
     </div>
 </template>
