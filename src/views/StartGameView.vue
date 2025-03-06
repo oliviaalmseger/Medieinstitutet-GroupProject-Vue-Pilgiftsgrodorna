@@ -1,11 +1,16 @@
-<script setup lang="js"></script>
+<script setup lang="js">
+import InfoGameCard from '../components/InfoGameCard.vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const startGame = () => {
+  router.push('/game'); // Navigate to /game
+};
+</script>
+
 
 <template>
-    <div class="background">Info om spel</div>
+    <InfoGameCard />
+    <button @click="startGame">Start Game</button>
 </template>
-
-<style scoped>
-.background {
-    background-color: yellowgreen;
-}
-</style>
