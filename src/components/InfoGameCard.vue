@@ -10,8 +10,8 @@
                 </p>
                 <p>Dra med musen över djungeln för att leta efter grodan!</p>
                 <img
-                    src="../assets/figma_components/frog-yellow-blue.png"
-                    class="blueyellow-frog"
+                    src="../assets/figma_components/frog-blue.png"
+                    class="blue-frog"
                 />
 
                 <div class="start-game-btn">
@@ -36,12 +36,12 @@ main {
         padding: 1rem;
         position: relative;
 
-        .blueyellow-frog {
-            width: 120px;
+        .blue-frog {
+            width: 160px;
             height: auto;
             position: absolute;
-            right: -20px;
-            top: -30px;
+            right: -5px;
+            top: -65px;
         }
 
         h2 {
