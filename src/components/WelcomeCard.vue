@@ -39,7 +39,7 @@
             width: 80px;
             height: auto;
             position: absolute;
-            left: 15px;
+            left: 10px;
             bottom: 25px;
         }
 
@@ -47,7 +47,7 @@
             width: 80px;
             height: auto;
             position: absolute;
-            right: 15px;
+            right: 10px;
             bottom: 20px;
         }
     }
@@ -59,9 +59,13 @@
         background-image: url(../assets/figma_components/wood-sign-button.png);
         background-size: contain;
         background-position: center;
-        width: 80px;
+        width: 100px;
         height: 40px;
         margin: 2rem 0rem 1rem 0rem;
+
+        button {
+            font-size: 1rem;
+        }
     }
 }
 
