@@ -2,6 +2,7 @@
 defineProps({
     heading: String,
     content: String,
+    image: String,
 });
 </script>
 
@@ -9,6 +10,7 @@ defineProps({
     <section class="info-card">
         <h3>{{ heading }}</h3>
         <p>{{ content }}</p>
+        <img :src="image" alt="Image" />
     </section>
 </template>
 
