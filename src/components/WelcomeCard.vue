@@ -13,7 +13,9 @@
                 class="blueyellow-frog"
             />
         </div>
-        <div class="read-more-btn"><a>Läs mer</a></div>
+        <div class="read-more-btn">
+            <button>Läs mer</button>
+        </div>
     </section>
 </template>
 
@@ -60,15 +62,6 @@
         width: 80px;
         height: 40px;
         margin: 2rem 0rem 1rem 0rem;
-
-        a {
-            $link-fontsize: 1.125rem;
-
-            &:hover {
-                color: $detail-color;
-                cursor: not-allowed;
-            }
-        }
     }
 }
 
