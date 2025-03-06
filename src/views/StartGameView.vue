@@ -1,12 +1,7 @@
 <script setup lang="js">
+import InfoGameCard from '../components/InfoGameCard.vue';
 </script>
 
 <template>
-    <div class="background">Info om spel</div>
+    <InfoGameCard />
 </template>
-
-<style scoped>
-.background {
-    background-color: yellowgreen;
-}
-</style>
