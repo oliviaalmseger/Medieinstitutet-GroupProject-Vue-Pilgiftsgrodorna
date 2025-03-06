@@ -105,10 +105,10 @@ main {
             margin-top: 70px;
 
             .blueyellow-frog {
-                width: 220px;
+                width: 250px;
                 height: auto;
                 position: absolute;
-                right: -50px;
+                right: -60px;
                 top: -50px;
             }
 
