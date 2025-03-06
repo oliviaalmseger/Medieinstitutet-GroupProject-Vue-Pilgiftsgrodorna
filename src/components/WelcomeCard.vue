@@ -120,12 +120,22 @@
             margin-bottom: 1rem;
         }
 
-        .welcome-frogs {
+        .read-more-btn {
             display: none;
         }
 
-        .read-more-btn {
-            display: none;
+        .welcome-frogs {
+            .red-frog {
+                width: 200px;
+                left: 20px;
+                bottom: 30px;
+            }
+
+            .blueyellow-frog {
+                width: 200px;
+                right: 50px;
+                top: 30px;
+            }
         }
     }
 }
