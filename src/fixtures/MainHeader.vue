@@ -4,14 +4,16 @@ import { RouterLink } from 'vue-router';
 
 <template>
     <header>
+        <img
+            class="logo"
+            src="../assets/figma_components/full-logo.svg"
+            alt="Logga föreställande en blåsvart groda sittandes på en träplanka med texten Pilgiftsgrodan i samma färg som grodan på."
+        />
 
-    <img class="logo" src="../assets/figma_components/full-logo.svg" 
-    alt="Logga föreställande en blåsvart groda sittandes på en träplanka med texten Pilgiftsgrodan i samma färg som grodan på.">
-        
-    <nav>
-        <div class="nav-bg">
-            <RouterLink class="nav-btn" to="/">Hem</RouterLink>
-        </div>
+        <nav>
+            <div class="nav-bg">
+                <RouterLink class="nav-btn" to="/">Hem</RouterLink>
+            </div>
 
             <div class="nav-bg">
                 <RouterLink class="nav-btn" to="/startGame">Spel</RouterLink>
@@ -57,7 +59,7 @@ header {
             display: flex;
             justify-content: center;
 
-            font-family: $link-font; 
+            font-family: $link-font;
             font-size: $link-fontsize;
             color: $link-color;
             text-decoration: none;
