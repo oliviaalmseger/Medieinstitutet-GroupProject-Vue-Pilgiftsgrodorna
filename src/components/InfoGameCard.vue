@@ -45,7 +45,6 @@ main {
         }
 
         h2 {
-            font-size: 1.1rem;
             margin-top: 1.5rem;
             margin-bottom: 2.5rem;
         }
@@ -82,10 +81,6 @@ main {
                 position: absolute;
                 right: -30px;
                 top: -50px;
-            }
-
-            h2 {
-                font-size: $h3-fs-tablet;
             }
 
             p {
