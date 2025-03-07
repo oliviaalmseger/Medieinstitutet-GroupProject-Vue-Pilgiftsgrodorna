@@ -2,6 +2,8 @@
 defineProps({
     heading: String,
     content: String,
+    image: String,
+    imageClass: String, 
 });
 </script>
 
@@ -9,6 +11,7 @@ defineProps({
     <section class="info-card">
         <h3>{{ heading }}</h3>
         <p>{{ content }}</p>
+        <img :src="image" :class="imageClass" alt="Liten bild på en groda" />
     </section>
 </template>
 
@@ -18,6 +21,7 @@ defineProps({
     flex-direction: column;
     width: 300px;
     padding: 1.5rem;
+    position: relative;
 
     h3 {
         margin-bottom: 1rem;
@@ -27,6 +31,8 @@ defineProps({
         margin-bottom: 2.5rem;
     }
 }
+@import 'FrogStyles/FrogStylesMobile.scss';
+
 
 @media (min-width: 834px) {
     .info-card {
@@ -37,6 +43,7 @@ defineProps({
             margin-bottom: 1.5rem;
         }
     }
+    @import 'FrogStyles/FrogStylesTablet.scss';
 }
 
 @media (min-width: 1280px) {
@@ -47,5 +54,6 @@ defineProps({
         margin-bottom: 20px;
         margin-right: 8px;
     }
+    @import 'FrogStyles/FrogStylesDesktop.scss';
 }
 </style>

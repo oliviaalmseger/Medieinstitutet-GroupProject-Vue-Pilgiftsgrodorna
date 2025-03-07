@@ -1,0 +1,44 @@
+.info-card {
+    .blue-frog {
+        width: 100px;
+        height: auto;
+        position: absolute;
+        left: 180px;
+        top: -28px;
+    }
+
+    .purple-frog {
+        transform: scaleX(-1);
+        width: 120px;
+        height: auto;
+        position: absolute;
+        left: 182px;
+        top: 138px;
+    }
+
+    .yellow-blue-frog {
+        transform: scaleX(-1);
+        width: 140px;
+        height: auto;
+        position: absolute;
+        left: -15px;
+        bottom: 220px;
+    }
+
+    .red-frog {
+        transform: scaleX(-1); 
+        width: 170px;
+        height: auto;
+        position: absolute;
+        left: 145px;
+        bottom: -53px;
+    }
+
+    .yellow-frog {
+        width: 115px;
+        height: auto;
+        position: absolute;
+        left: -10px;
+        bottom: 220px;        
+    }
+}
