@@ -3,8 +3,6 @@ import { ref } from 'vue';
 import { onMounted, onUnmounted } from 'vue';
 import PopUp from '../components/PopUp.vue';
 
-
-
 onMounted(() => {
     document.body.classList.add('game-page');
 });
@@ -14,7 +12,6 @@ onUnmounted(() => {
 });
 
 const frogIsFound = ref(false);
-
 
 // Randomize frogs position on load
 const frogPosition = ref({
@@ -33,28 +30,27 @@ function foundFrog() {
     frogIsFound.value = true;
 }
 
-function hideFrog() {
-    setTimeout (() => {
-        frogIsFound.value = false;
-        setRandomFrogPosition();
-    }, 7000)
+function playAgain() {
+    frogIsFound.value = false;
+    setRandomFrogPosition();
 }
 </script>
 
 <template>
     <div class="container">
-        <div class="pop-up" v-if="frogIsFound">
-            <PopUp 
-                heading="Grattis!" 
-                content="Du hittade grodan!" 
-                image="src/assets/figma_components/frog-red.png"
-                imageClass="red-frog" 
-            />
-        </div>
+        <PopUp
+            class="pop-up"
+            v-if="frogIsFound"
+            heading="Grattis!"
+            content="Du hittade grodan!"
+            image="src/assets/figma_components/frog-red.png"
+            imageClass="red-frog"
+            closeButton="Spela igen"
+            @close="playAgain"
+        />
         <div
             class="frog"
             v-on:mouseover="foundFrog"
-            v-on:mouseleave="hideFrog"
             :style="{ bottom: frogPosition.bottom, right: frogPosition.right }"
         >
             <img

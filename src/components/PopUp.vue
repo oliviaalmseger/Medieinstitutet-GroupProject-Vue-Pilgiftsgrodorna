@@ -4,7 +4,10 @@ defineProps({
     content: String,
     image: String,
     imageClass: String, 
+    closeButton: String,
 });
+
+const emit = defineEmits(['close']);
 </script>
 
 <template>
@@ -12,6 +15,7 @@ defineProps({
         <h3>{{ heading }}</h3>
         <p>{{ content }}</p>
         <img :src="image" :class="imageClass" alt="Liten bild på en groda" />
+        <button @click="emit('close')">{{ closeButton }}</button>
     </div>
 </template>
 
@@ -29,8 +33,9 @@ div {
     align-items: center;
     justify-content: center;
 
-    h3 {
+    p {
         margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .red-frog {
