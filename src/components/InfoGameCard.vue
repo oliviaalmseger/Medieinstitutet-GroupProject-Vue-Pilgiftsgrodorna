@@ -71,7 +71,7 @@ const startGame = () => {
     }
 }
 
-@media (min-width: 843px) {
+@media (min-width: 834px) {
     .infogame-container {
         .info-game-card {
             width: 445px;

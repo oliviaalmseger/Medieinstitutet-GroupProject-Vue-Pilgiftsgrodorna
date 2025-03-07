@@ -7,7 +7,7 @@ const readMore = () => {
     if (targetReadMore.value) {
         let offset;
 
-        if (window.innerWidth < 843) {
+        if (window.innerWidth < 834) {
             offset = 100;
         } else if (window.innerWidth < 1124) {
             offset = 165;
