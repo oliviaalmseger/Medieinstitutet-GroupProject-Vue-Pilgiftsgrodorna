@@ -22,14 +22,14 @@ defineExpose({
                     image="src/assets/figma_components/frog-blue.png"
                     imageClass="blue-frog"
                 />
-        
+
                 <InfoCard
                     heading="Visste du att?"
                     content="Pilgiftsgrodorna är nyfikna av sig och gärna utforskar sina omgivningar."
                     image="src/assets/figma_components/frog-purple.png"
                     imageClass="purple-frog"
                 />
-                
+
                 <InfoCard
                     heading="Visste du att?"
                     content="Giftet har traditionellt använts av indianer i Sydamerika för att förgifta pilar vid jakt och det är också därför de fått namnet pilgiftsgrodor."
@@ -54,48 +54,32 @@ defineExpose({
 </template>
 
 <style scoped lang="scss">
-main {
+.startpage-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
 
-    .startpage-container {
+    .infocard-container {
         display: flex;
         flex-direction: column;
-        margin-bottom: 4rem;
-
-        .infocard-container {
-            display: flex;
-            flex-direction: column;
-            gap: 70px;
-        }
+        gap: 70px;
     }
 }
 
 @media (min-width: 834px) {
-    main {
-        .startpage-container {
-            width: 620px;
-        }
+    .startpage-container {
+        width: 620px;
     }
 }
 
 @media (min-width: 1280px) {
-    main {
-        box-sizing: border-box;
+    .startpage-container {
+        width: 1124px;
 
-        .startpage-container {
+        .infocard-container {
+            flex-direction: row;
+            flex-wrap: wrap;
             width: 1124px;
-
-            .infocard-container {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                width: 1124px;
-
-                h3 {
-                    margin-bottom: 1.5rem;
-                }
-            }
         }
     }
 }
