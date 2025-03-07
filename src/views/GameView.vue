@@ -44,7 +44,12 @@ function hideFrog() {
 <template>
     <div class="container">
         <div class="pop-up" v-if="frogIsFound">
-            <PopUp heading="Grattis!" content="Du hittade grodan!" />
+            <PopUp 
+                heading="Grattis!" 
+                content="Du hittade grodan!" 
+                image="src/assets/figma_components/frog-red.png"
+                imageClass="red-frog" 
+            />
         </div>
         <div
             class="frog"
