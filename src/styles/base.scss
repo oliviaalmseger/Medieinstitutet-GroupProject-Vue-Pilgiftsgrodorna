@@ -1,7 +1,14 @@
+@import 'FrogStyles/FrogStylesMobile.scss';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
 body {
@@ -35,16 +42,4 @@ body::before {
     background-position: center;
     background-attachment: fixed;
     overflow: hidden;
-  }
-  
-.startpage-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.infogame-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

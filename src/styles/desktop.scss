@@ -1,14 +1,12 @@
+@import 'FrogStyles/FrogStylesDesktop.scss';
+
 :root {
     background-size: cover;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-
     article {
         flex-direction: column;
-        display: flex;
         justify-content: start;
     }
 }
