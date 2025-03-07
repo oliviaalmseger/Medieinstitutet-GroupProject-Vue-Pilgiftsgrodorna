@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import { onMounted, onUnmounted } from 'vue';
 import PopUp from '../components/PopUp.vue';
+import HidingFrog from '../components/HidingFrog.vue';
 
 onMounted(() => {
     document.body.classList.add('game-page');
@@ -12,19 +13,7 @@ onUnmounted(() => {
 });
 
 const frogIsFound = ref(false);
-
-// Randomize frogs position on load
-const frogPosition = ref({
-    bottom: `${Math.floor(Math.random() * 65) + 5}%`,
-    right: `${Math.floor(Math.random() * 90) + 5}%`,
-});
-
-function setRandomFrogPosition() {
-    frogPosition.value = {
-        bottom: `${Math.floor(Math.random() * 65) + 5}%`,
-        right: `${Math.floor(Math.random() * 90) + 5}%`,
-    };
-}
+const hidingFrogRef = ref(null);
 
 function foundFrog() {
     frogIsFound.value = true;
@@ -32,7 +21,7 @@ function foundFrog() {
 
 function playAgain() {
     frogIsFound.value = false;
-    setRandomFrogPosition();
+    hidingFrogRef.value?.setRandomFrogPosition();
 }
 </script>
 
@@ -48,16 +37,7 @@ function playAgain() {
             closeButton="Spela igen"
             @close="playAgain"
         />
-        <div
-            class="frog"
-            v-on:mouseover="foundFrog"
-            :style="{ bottom: frogPosition.bottom, right: frogPosition.right }"
-        >
-            <img
-                src="../assets/figma_components/logo.png"
-                alt="Groda för spelet 'Hitta grodan'"
-            />
-        </div>
+        <HidingFrog ref="hidingFrogRef" @found="foundFrog" />
     </div>
 </template>
 
@@ -73,20 +53,5 @@ function playAgain() {
     bottom: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.frog {
-    position: fixed;
-    opacity: 0;
-    width: 64px;
-    height: 64px;
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
-}
-.frog:hover {
-    opacity: 1;
 }
 </style>
