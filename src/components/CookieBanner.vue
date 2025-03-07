@@ -1,4 +1,5 @@
 <script setup>
+import WoodButton from './WoodButton.vue';
 import { ref } from 'vue';
 
 const emit = defineEmits(['btnClick']);
@@ -14,20 +15,16 @@ const handleClick = () => {
     <div v-if="showCookie" class="cookie-banner">
         <p>Acceptera cookies</p>
         <div class="cookie-button-container">
-            <button
-                class="cookie-button"
+            <WoodButton
+                label="Acceptera"
                 @click="handleClick"
                 aria-label="Acceptera cookies"
-            >
-                Acceptera
-            </button>
-            <button
-                class="cookie-button"
+            />
+            <WoodButton
+                label="Neka"
                 @click="handleClick"
                 aria-label="Neka cookies"
-            >
-                Neka
-            </button>
+            />
         </div>
     </div>
 </template>
