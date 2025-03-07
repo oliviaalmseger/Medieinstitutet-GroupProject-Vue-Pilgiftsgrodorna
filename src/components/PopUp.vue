@@ -2,6 +2,7 @@
 defineProps({
     heading: String,
     content: String,
+    timer: String, 
     image: String,
     imageClass: String, 
 });
@@ -10,7 +11,7 @@ defineProps({
 <template>
     <div>
         <h3>{{ heading }}</h3>
-        <p>{{ content }}</p>
+        <p>{{ content }} {{ timer }}</p>
         <img :src="image" :class="imageClass" alt="Liten bild på en groda" />
     </div>
 </template>

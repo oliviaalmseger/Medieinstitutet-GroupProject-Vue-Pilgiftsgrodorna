@@ -4,7 +4,10 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 const startGame = () => {
-    router.push('/game');
+    router.push({
+    path: '/game',
+    query: { startTimer: 'true' }
+  });
 };
 </script>
 
