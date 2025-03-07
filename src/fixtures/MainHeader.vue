@@ -43,33 +43,60 @@ header {
         margin-bottom: 15px;
     }
 
-    .nav-bg {
-        background-image: url(../assets/figma_components/nav-button.png);
-        background-size: cover;
-        background-position: center;
-        width: 90px;
-        height: 30px;
-        alt: 'White plank with rounded corners acting as a background to the navigation buttons'; //Dubbelkolla alttext vid tillfälle
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
 
-        display: inline-block;
-        margin-inline: 5px;
+        .nav-bg {
+            background-image: url(../assets/figma_components/nav-button.png);
+            background-size: cover;
+            background-position: center;
+            width: 90px;
+            height: 30px;
+            alt: 'Vit planka med trädetaljer på kanterna som utgör backgrunden till navigationsknapparna'; 
 
-        .nav-btn {
-            padding-top: 5px;
             display: flex;
             justify-content: center;
+            align-items: center;
+            padding-top: 5px;
 
-            font-family: $link-font;
-            font-size: $link-fontsize;
-            color: $link-color;
-            text-decoration: none;
-            cursor: pointer;
+            .nav-btn {
+                font-family: $link-font;
+                font-size: $link-fontsize;
+                color: $link-color;
+                text-decoration: none;
+                cursor: pointer;
 
-            &:hover {
-                font-weight: 400;
-                color: $detail-color;
+                &:hover {
+                    color: $detail-color;
+                }
             }
         }
     }
 }
+
+@media (min-width: 834px) {
+    header {
+        .logo {
+            width: 500px;
+            margin-bottom: 15px;
+        }
+
+        nav {
+        gap: 15px;
+
+            .nav-bg {
+                width: 140px;
+                height: 50px;
+
+                .nav-btn {
+                    font-size: $h3-fs-desktop;
+                }
+            }
+        }
+    }
+}
+
 </style>
