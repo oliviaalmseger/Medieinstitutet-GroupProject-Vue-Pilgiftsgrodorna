@@ -3,6 +3,12 @@ import { ref } from 'vue';
 import { onMounted, onUnmounted } from 'vue';
 import PopUp from '../components/PopUp.vue';
 
+// Randomize frogs position on load
+const frogPosition = ref({
+    bottom: `${Math.floor(Math.random() * 65) + 5}%`,
+    right: `${Math.floor(Math.random() * 90) + 5}%`,
+});
+
 onMounted(() => {
     document.body.classList.add('game-page');
 });
@@ -27,7 +33,12 @@ function hideFrog() {
         <div class="pop-up" v-if="frogIsFound">
             <PopUp heading="Grattis!" content="Du hittade grodan!" />
         </div>
-        <div class="frog" v-on:mouseover="foundFrog" v-on:mouseleave="hideFrog">
+        <div
+            class="frog"
+            v-on:mouseover="foundFrog"
+            v-on:mouseleave="hideFrog"
+            :style="{ bottom: frogPosition.bottom, right: frogPosition.right }"
+        >
             <img
                 src="../assets/figma_components/logo.png"
                 alt="Groda för spelet 'Hitta grodan'"
@@ -52,8 +63,6 @@ function hideFrog() {
 
 .frog {
     position: fixed;
-    bottom: 20%;
-    right: 10%;
     opacity: 0;
     width: 64px;
     height: 64px;
