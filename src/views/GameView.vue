@@ -3,11 +3,7 @@ import { ref } from 'vue';
 import { onMounted, onUnmounted } from 'vue';
 import PopUp from '../components/PopUp.vue';
 
-// Randomize frogs position on load
-const frogPosition = ref({
-    bottom: `${Math.floor(Math.random() * 65) + 5}%`,
-    right: `${Math.floor(Math.random() * 90) + 5}%`,
-});
+
 
 onMounted(() => {
     document.body.classList.add('game-page');
@@ -19,12 +15,29 @@ onUnmounted(() => {
 
 const frogIsFound = ref(false);
 
+
+// Randomize frogs position on load
+const frogPosition = ref({
+    bottom: `${Math.floor(Math.random() * 65) + 5}%`,
+    right: `${Math.floor(Math.random() * 90) + 5}%`,
+});
+
+function setRandomFrogPosition() {
+    frogPosition.value = {
+        bottom: `${Math.floor(Math.random() * 65) + 5}%`,
+        right: `${Math.floor(Math.random() * 90) + 5}%`,
+    };
+}
+
 function foundFrog() {
     frogIsFound.value = true;
 }
 
 function hideFrog() {
-    frogIsFound.value = false;
+    setTimeout (() => {
+        frogIsFound.value = false;
+        setRandomFrogPosition();
+    }, 7000)
 }
 </script>
 
