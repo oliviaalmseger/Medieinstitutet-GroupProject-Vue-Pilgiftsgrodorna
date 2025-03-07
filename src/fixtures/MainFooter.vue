@@ -1,5 +1,4 @@
-<script setup lang="js">
-</script>
+<script setup lang="js"></script>
 
 <template>
     <div class="footer">
@@ -12,9 +11,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    background-color: $text-color; 
-    height: 35px; 
+
+    background-color: $text-color;
+    height: 35px;
     font-family: $h3-font;
     font-size: 1rem;
 }

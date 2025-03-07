@@ -1,3 +1,31 @@
+<script setup>
+import { ref } from 'vue';
+
+const targetReadMore = ref(null);
+
+const readMore = () => {
+    if (targetReadMore.value) {
+        let offset;
+
+        if (window.innerWidth < 843) {
+            offset = 100;
+        } else if (window.innerWidth < 1124) {
+            offset = 165;
+        } else {
+            offset = 50;
+        }
+
+        const position =
+            targetReadMore.value.getBoundingClientRect().top + window.scrollY;
+
+        window.scrollTo({
+            top: position + offset,
+            behavior: 'smooth',
+        });
+    }
+};
+</script>
+
 <template>
     <section class="welcome-card">
         <h2>Välkommen till Pilgiftsgrodornas fantastiska paradis!</h2>
@@ -14,7 +42,8 @@
             />
         </div>
         <div class="read-more-btn">
-            <button>Läs mer</button>
+            <button @click="readMore">Läs mer</button>
+            <CardArticle ref="targetReadMore" />
         </div>
     </section>
 </template>
@@ -124,22 +153,22 @@
             margin-bottom: 1rem;
         }
 
-        .read-more-btn {
-            display: none;
-        }
-
         .welcome-frogs {
             .red-frog {
-                width: 200px;
-                left: 20px;
+                width: 250px;
+                left: 30px;
                 bottom: 30px;
             }
 
             .blueyellow-frog {
-                width: 200px;
-                right: 50px;
-                top: 30px;
+                width: 250px;
+                right: 30px;
+                bottom: 30px;
             }
+        }
+
+        .read-more-btn {
+            margin: 2rem 0rem;
         }
     }
 }
