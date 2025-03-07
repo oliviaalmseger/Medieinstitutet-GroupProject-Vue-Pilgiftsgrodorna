@@ -22,6 +22,7 @@ const startGame = () => {
                 <img
                     src="../assets/figma_components/frog-blue.png"
                     class="blue-frog"
+                    alt="Liten bild på en groda"
                 />
 
                 <div class="start-game-btn">
@@ -47,11 +48,11 @@ main {
         position: relative;
 
         .blue-frog {
-            width: 160px;
+            width: 90px;
             height: auto;
             position: absolute;
-            right: -5px;
-            top: -65px;
+            right: -35px;
+            top: -30px;
         }
 
         h2 {
@@ -85,8 +86,8 @@ main {
             padding: 2rem;
             margin-top: 70px;
 
-            .blueyellow-frog {
-                width: 170px;
+            .blue-frog {
+                width: 130px;
                 height: auto;
                 position: absolute;
                 right: -30px;
@@ -109,8 +110,8 @@ main {
             padding: 2rem;
             margin-top: 70px;
 
-            .blueyellow-frog {
-                width: 250px;
+            .blue-frog {
+                width: 175px;
                 height: auto;
                 position: absolute;
                 right: -60px;
