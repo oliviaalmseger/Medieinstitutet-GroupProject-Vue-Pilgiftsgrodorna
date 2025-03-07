@@ -2,6 +2,8 @@
 defineProps({
     heading: String,
     content: String,
+    image: String,
+    imageClass: String, 
 });
 </script>
 
@@ -9,6 +11,7 @@ defineProps({
     <div>
         <h3>{{ heading }}</h3>
         <p>{{ content }}</p>
+        <img :src="image" :class="imageClass" alt="Liten bild på en groda" />
     </div>
 </template>
 
@@ -29,6 +32,14 @@ div {
     h3 {
         margin-bottom: 20px;
     }
+
+    .red-frog {
+        position: absolute;
+        width: 185px;
+        height: auto;
+        bottom: 80px;
+        left: -60px;
+    }
 }
 
 @media (min-width: 834px) {
@@ -36,6 +47,11 @@ div {
         border: 8px solid $border-color;
         width: 367px;
         height: 199px;
+
+        .red-frog {
+            width: 215px;
+            bottom: 120px;
+        }
     }
 }
 
@@ -43,6 +59,10 @@ div {
     div {
         width: 263px;
         height: 174px;
+
+        .red-frog {
+            bottom: 100px;
+        }
     }
 }
 </style>
