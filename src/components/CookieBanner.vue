@@ -26,6 +26,16 @@ const handleClick = () => {
                 aria-label="Neka cookies"
             />
         </div>
+        <div class="frog-cage">
+            <img
+                src="../assets/figma_components/frog-red.png"
+                class="red-frog"
+            />
+            <img
+                src="../assets/figma_components/frog-yellow-blue.png"
+                class="yellow-blue-frog"
+            />
+        </div>
     </div>
 </template>
 
@@ -47,25 +57,6 @@ const handleClick = () => {
         display: flex;
         gap: 30px;
         justify-content: center;
-       
-
-        .cookie-button {
-            background: url('/src/assets/figma_components/wood-sign-button.png')
-            no-repeat center / cover;
-            border: none;
-            width: 117px;
-            height: 57px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            cursor: pointer;
-            text-align: center;
-            font-size: $h2-fs-mobile;
-            font-family: 'Luckiest Guy', sans-serif;
-            color: #000;
-        }
     }
     .frog-cage {
         position: fixed;
@@ -73,20 +64,20 @@ const handleClick = () => {
         left: 50%;
 
         .red-frog {
-        position: absolute;
-        transform: scaleX(-1);
-        width: 80px; 
-        height: auto; 
-        bottom: 1px;
-        left: 63px;
-        rotate: 10deg;
+            position: absolute;
+            transform: scaleX(-1);
+            width: 80px;
+            height: auto;
+            bottom: 1px;
+            left: 63px;
+            rotate: 10deg;
         }
 
         .yellow-blue-frog {
             width: 80px;
             height: auto;
             transform: scaleX(-1);
-            position:absolute;
+            position: absolute;
             left: -135px;
             bottom: 10px;
             rotate: 10deg;
@@ -95,9 +86,9 @@ const handleClick = () => {
 }
 
 p {
-        font-size: $h2-fs-mobile;
-        font-family: 'Luckiest Guy', sans-serif;
-        color: #000;
+    font-size: $h2-fs-mobile;
+    font-family: 'Luckiest Guy', sans-serif;
+    color: #000;
 }
 
 @media (min-width: 1280px) {
