@@ -1,17 +1,24 @@
-# Projektets beskrivning 
-Det här projektet är resultatet av ett samarbete mellan två team: **Pilgiftsgrodorna** och **Surikaterna**.  
+# 🐸 Welcome to the World of Poison Dart Frogs 
+Welcome to our website about poison dart frogs! Here, you’ll get a glimpse into the colorful world of these small yet fascinating creatures. The site features both fun and interactive elements, such as a game where you can search for a hidden frog in the rainforest, as well as fun facts about poison dart frogs. Explore and learn more about these incredible animals in a fun and engaging way!
 
-- **Pilgiftsgrodorna** ansvarade för design och användarupplevelse, vilket inkluderade färgschema, layout och interaktionsflöden. 
- 
-- **Surikaterna** tog sedan designen och förverkligade den genom att koda upp sidan och säkerställa att allt fungerar som det ska.  
+## 🔍 Project overview
+This project is part of a school assignment where we developed a website about poison dart frogs based on a design created by another group (The Poison Dart Frogs). The purpose of the project was to practice component-based development in Vue.js while collaborating both within our own team and with another group. We gained experience in both designing and implementing a design created by others into a functional website.
+The design was created in Figma by The Poison Dart Frogs, and we followed their guidelines for colors, typography, and layout during implementation.
+This website is our first project using Vue.js and includes:
+•	A landing section with information about poison dart frogs
+•	A contact page with a form
+•	An interactive game where players search for a hidden frog in the rainforest
+This project allowed us to explore Vue.js, Vue Router, and component-based development in practice. It was also a valuable learning experience to work from an existing design and translate it into code.
 
-Tillsammans har vi skapat en genomtänkt och välfungerande webbplats!
+### 📖 The Story Behind the Name
+As mentioned, the Poison Dart Frogs team ([Angelica Nylander](https://github.com/angien90), [Vy Petersson](https://github.com/tgvie), [Marie Lenvik](https://github.com/M-Lenvik) och [David Brunni](https://github.com/DavidBrunni)) created the design in Figma. Then, we – the Meerkats – took over both the design and the repo to bring it to life through code.
+But when we inherited the Poison Dart Frogs’ repo, an identity crisis hit us—who were we now? That’s when the Meerkats transformed and became… The Poison Meerkats!
 
-## Pilgiftsgrodorna
-- [angien90](https://github.com/angien90)
-- [tgvie](https://github.com/tgvie)
-- [M-Lenvik](https://github.com/M-Lenvik)
-- [DavidBrunni](https://github.com/DavidBrunni)
+## 🎥 Demo 
+[Click here to view the demo] (https://medieinstitutet.github.io/fed24d-grafiska-verktyg-pilgiftsgrodorna/)
+
+
+
 
 ## Surikatera
 - [Olivia Almseger](https://github.com/oliviaalmseger)
@@ -19,25 +26,3 @@ Tillsammans har vi skapat en genomtänkt och välfungerande webbplats!
 - [Nicole Sjöberg-Silfverling](https://github.com/nicolesilfverling)
 - [Alice Swahn](https://github.com/aliceswahn)
 - [Agnes Wilson](https://github.com/agneswilson)
-
-## Design underlag
-### Textsnitt
-- Heading 1 i Luckiest Guy (32px mobile / 48px tablet & desktop)
-- Heading 2 i RocknRoll One (20px mobile /  25px tablet & 32 desktop)
-- Heading 3 i RocknRoll One (18px mobile / 25px tablet & desktop)
-- Brödtext i Gantari (16px mobile / 20px tablet & desktop)
-- Buttons i Luckiest Guy (20px mobile, tablet & desktop) 
-- Navbar i Luckiest Guy (20px mobile, tablet & desktop)
-
-Alla fonter finns på Google Fonts
-
-### Färgpalett
-![image](https://github.com/user-attachments/assets/d82fe536-1708-492f-8c14-3a939a584d16)
-
-### Logga
-![image](https://github.com/user-attachments/assets/38c64a8c-cb97-4976-a84e-786764fbb709)
-
-### Bildgalleri
-Alla bilder ligger i assets mappen
-
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/l0wzEkbn)
