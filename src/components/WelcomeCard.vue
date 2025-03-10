@@ -36,9 +36,11 @@ const readMore = () => {
             <img
                 src="../assets/figma_components/frog-red.png"
                 class="red-frog"
+                alt="Liten bild på en groda"
             /><img
                 src="../assets/figma_components/frog-yellow-blue.png"
                 class="blueyellow-frog"
+                alt="Liten bild på en groda"
             />
         </div>
         <div class="read-more-btn">
