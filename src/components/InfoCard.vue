@@ -3,7 +3,7 @@ defineProps({
     heading: String,
     content: String,
     image: String,
-    imageClass: String, 
+    imageClass: String,
 });
 </script>
 
@@ -31,8 +31,6 @@ defineProps({
         margin-bottom: 2.5rem;
     }
 }
-@import 'FrogStyles/FrogStylesMobile.scss';
-
 
 @media (min-width: 834px) {
     .info-card {
@@ -43,7 +41,6 @@ defineProps({
             margin-bottom: 1.5rem;
         }
     }
-    @import 'FrogStyles/FrogStylesTablet.scss';
 }
 
 @media (min-width: 1280px) {
@@ -54,6 +51,5 @@ defineProps({
         margin-bottom: 20px;
         margin-right: 8px;
     }
-    @import 'FrogStyles/FrogStylesDesktop.scss';
 }
 </style>

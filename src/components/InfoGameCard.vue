@@ -1,5 +1,6 @@
 <script setup>
 import { useRouter } from 'vue-router';
+import WoodButton from '../components/WoodButton.vue';
 
 const router = useRouter();
 
@@ -29,17 +30,18 @@ const startGame = () => {
                 />
 
                 <div class="start-game-btn">
-                    <button @click="startGame">Starta spelet</button>
+                    <WoodButton label="Starta spelet" @click="startGame" />
                 </div>
             </section>
         </div>
     </main>
 </template>
 
-<style scoped lang="scss">
-main {
+<style lang="scss" scoped>
+.infogame-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 
     .info-game-card {
         display: flex;
@@ -49,14 +51,6 @@ main {
         margin: 35px 0rem 70px 0rem;
         padding: 1rem;
         position: relative;
-
-        .blue-frog {
-            width: 90px;
-            height: auto;
-            position: absolute;
-            right: -35px;
-            top: -30px;
-        }
 
         h2 {
             margin-top: 1.5rem;
@@ -84,18 +78,9 @@ main {
 @media (min-width: 834px) {
     .infogame-container {
         .info-game-card {
-            align-items: center;
             width: 445px;
             padding: 2rem;
             margin-top: 70px;
-
-            .blue-frog {
-                width: 130px;
-                height: auto;
-                position: absolute;
-                right: -30px;
-                top: -50px;
-            }
 
             p {
                 margin-bottom: 3rem;
@@ -104,22 +89,10 @@ main {
     }
 }
 
-@media (min-width: 1124px) {
+@media (min-width: 1280px) {
     .infogame-container {
         .info-game-card {
-            align-items: center;
             width: 825px;
-
-            padding: 2rem;
-            margin-top: 70px;
-
-            .blue-frog {
-                width: 175px;
-                height: auto;
-                position: absolute;
-                right: -60px;
-                top: -50px;
-            }
 
             h2 {
                 font-size: $h2-fs-desktop;

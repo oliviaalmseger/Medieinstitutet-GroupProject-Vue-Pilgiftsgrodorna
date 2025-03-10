@@ -59,30 +59,23 @@ const handleClick = () => {
         display: flex;
         gap: 30px;
         justify-content: center;
-    }
-    .frog-cage {
-        position: fixed;
-        bottom: 60px;
-        left: 50%;
 
-        .red-frog {
-            position: absolute;
-            transform: scaleX(-1);
-            width: 80px;
-            height: auto;
-            bottom: 1px;
-            left: 63px;
-            rotate: 10deg;
-        }
+        .cookie-button {
+            background: url('/src/assets/figma_components/wood-sign-button.png')
+                no-repeat center / cover;
+            border: none;
+            width: 117px;
+            height: 57px;
 
-        .yellow-blue-frog {
-            width: 80px;
-            height: auto;
-            transform: scaleX(-1);
-            position: absolute;
-            left: -135px;
-            bottom: 10px;
-            rotate: 10deg;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+            text-align: center;
+            font-size: $h2-fs-mobile;
+            font-family: 'Luckiest Guy', sans-serif;
+            color: #000;
         }
     }
 }

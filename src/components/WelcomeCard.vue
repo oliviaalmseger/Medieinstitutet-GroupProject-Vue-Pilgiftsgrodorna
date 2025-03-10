@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import WoodButton from '../components/WoodButton.vue';
 
 const targetReadMore = ref(null);
 
@@ -7,7 +8,7 @@ const readMore = () => {
     if (targetReadMore.value) {
         let offset;
 
-        if (window.innerWidth < 843) {
+        if (window.innerWidth < 834) {
             offset = 100;
         } else if (window.innerWidth < 1124) {
             offset = 165;
@@ -44,13 +45,13 @@ const readMore = () => {
             />
         </div>
         <div class="read-more-btn">
-            <button @click="readMore">Läs mer</button>
-            <CardArticle ref="targetReadMore" />
+            <WoodButton label="Läs mer" @click="readMore" />
+            <div ref="targetReadMore"></div> 
         </div>
     </section>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .welcome-card {
     display: flex;
     flex-direction: column;
@@ -63,24 +64,6 @@ const readMore = () => {
 
     h2 {
         margin: 0.5rem 0px;
-    }
-
-    .welcome-frogs {
-        .red-frog {
-            width: 80px;
-            height: auto;
-            position: absolute;
-            left: 10px;
-            bottom: 25px;
-        }
-
-        .blueyellow-frog {
-            width: 80px;
-            height: auto;
-            position: absolute;
-            right: 10px;
-            bottom: 20px;
-        }
     }
 
     .read-more-btn {
@@ -102,7 +85,6 @@ const readMore = () => {
 
 @media (min-width: 834px) {
     .welcome-card {
-        align-items: center;
         width: 100%;
         padding: 2rem 3rem;
         margin-top: 70px;
@@ -117,20 +99,6 @@ const readMore = () => {
             margin-bottom: 1rem;
         }
 
-        .welcome-frogs {
-            .red-frog {
-                width: 120px;
-                left: 50px;
-                bottom: 75px;
-            }
-
-            .blueyellow-frog {
-                width: 140px;
-                right: 50px;
-                bottom: 60px;
-            }
-        }
-
         .read-more-btn {
             width: 170px;
             height: 62px;
@@ -141,32 +109,15 @@ const readMore = () => {
 
 @media (min-width: 1280px) {
     .welcome-card {
-        display: flex;
-        align-items: center;
         width: 1124px;
         padding: 2.5rem 1rem;
-        margin: 70px 0px 90px 0px;
+        margin-bottom: 90px;
 
         h2 {
             width: 700px;
         }
         p {
             width: 700px;
-            margin-bottom: 1rem;
-        }
-
-        .welcome-frogs {
-            .red-frog {
-                width: 250px;
-                left: 30px;
-                bottom: 30px;
-            }
-
-            .blueyellow-frog {
-                width: 250px;
-                right: 30px;
-                bottom: 30px;
-            }
         }
 
         .read-more-btn {
