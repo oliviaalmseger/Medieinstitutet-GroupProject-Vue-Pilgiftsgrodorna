@@ -1,10 +1,13 @@
 <script setup>
+import WoodButton from '../components/WoodButton.vue';
+import Popup from '../components/FormPopup.vue';
 import { ref, computed } from 'vue';
 
 const firstName = ref('');
 const lastName = ref('');
 const email = ref('');
 const message = ref('');
+const showFormPopup = ref(false);
 
 const isValidEmail = () => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
 
@@ -15,7 +18,7 @@ const isFormValid = computed(
 const handleSubmit = (event) => {
     event.preventDefault();
     if (isFormValid.value) {
-        alert('Formuläret har skickats!');
+        showFormPopup.value = true;
         resetForm();
     }
 };
@@ -82,16 +85,15 @@ const resetForm = () => {
                     ></textarea>
                 </div>
 
-                <button
-                    type="submit"
-                    class="send-button"
+                <WoodButton
+                    label="Skicka"
                     :disabled="!isFormValid"
-                >
-                    Skicka
-                </button>
+                    @click="handleSubmit"
+                />
             </fieldset>
         </form>
     </div>
+    <Popup v-if="showFormPopup" :isVisible="showFormPopup" message="Formuläret har skickats!" @close="showFormPopup = false" />
 </template>
 
 <style scoped lang="scss">
@@ -146,27 +148,6 @@ textarea {
 textarea {
     resize: vertical;
     height: 80px;
-}
-
-.send-button {
-    background: url('/src/assets/figma_components/wood-sign-button.png')
-        no-repeat center / cover;
-    border: none;
-    width: 117px;
-    height: 57px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    text-align: center;
-    font-size: $h2-fs-mobile;
-    font-family: 'Luckiest Guy', sans-serif;
-    color: #000;
-}
-
-button:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
 }
 
 .error {

@@ -1,7 +1,10 @@
 <script setup lang="js">
-import { ref } from 'vue';
-import { onMounted, onUnmounted } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
+
 import PopUp from '../components/PopUp.vue';
+import GameTimer from '../components/GameTimer.vue';
+import HidingFrog from '../components/HidingFrog.vue';
+
 
 onMounted(() => {
     document.body.classList.add('game-page');
@@ -12,32 +15,43 @@ onUnmounted(() => {
 });
 
 const frogIsFound = ref(false);
+const hidingFrogRef = ref(null);
+
+const stopTimer = ref(false);
+const timerValue = ref('00:00');
 
 function foundFrog() {
     frogIsFound.value = true;
+    stopTimer.value = true; 
 }
 
-function hideFrog() {
+function playAgain() {
     frogIsFound.value = false;
+    hidingFrogRef.value?.setRandomFrogPosition();
+    stopTimer.value = false;
 }
+
+const shouldTimerStart = computed(() => !stopTimer.value);
+const updateTime = (newTime) => {
+  timerValue.value = newTime;
+};
 </script>
 
 <template>
     <div class="container">
-        <div class="pop-up" v-if="frogIsFound">
-            <PopUp 
-                heading="Grattis!" 
-                content="Du hittade grodan!" 
-                image="src/assets/figma_components/frog-red.png"
-                imageClass="red-frog" 
-            />
-        </div>
-        <div class="frog" v-on:mouseover="foundFrog" v-on:mouseleave="hideFrog">
-            <img
-                src="../assets/figma_components/logo.png"
-                alt="Groda för spelet 'Hitta grodan'"
-            />
-        </div>
+        <GameTimer :startTimer="shouldTimerStart" @time-updated="updateTime" />
+        <PopUp
+            class="pop-up"
+            v-if="frogIsFound"
+            heading="Grattis!"
+            content="Du hittade grodan!"
+            :timer="'Det tog dig ' + timerValue + ' sekunder att hitta grodan!'" 
+            image="src/assets/figma_components/frog-red.avif"
+            imageClass="red-frog"
+            closeButton="Spela igen"
+            @close="playAgain"
+        />
+        <HidingFrog ref="hidingFrogRef" @found="foundFrog" />
     </div>
 </template>
 
@@ -53,22 +67,5 @@ function hideFrog() {
     bottom: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.frog {
-    position: fixed;
-    bottom: 20%;
-    right: 10%;
-    opacity: 0;
-    width: 64px;
-    height: 64px;
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
-}
-.frog:hover {
-    opacity: 1;
 }
 </style>

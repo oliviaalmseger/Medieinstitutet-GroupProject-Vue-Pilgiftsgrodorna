@@ -1,4 +1,5 @@
 <script setup>
+import WoodButton from './WoodButton.vue';
 import { ref } from 'vue';
 
 const emit = defineEmits(['btnClick']);
@@ -14,28 +15,28 @@ const handleClick = () => {
     <div v-if="showCookie" class="cookie-banner">
         <p>Acceptera cookies</p>
         <div class="cookie-button-container">
-            <button
-                class="cookie-button"
+            <WoodButton
+                label="Acceptera"
                 @click="handleClick"
                 aria-label="Acceptera cookies"
-            >
-                Acceptera
-            </button>
-
-            <button
-                class="cookie-button"
+            />
+            <WoodButton
+                label="Neka"
                 @click="handleClick"
                 aria-label="Neka cookies"
-            >
-                Neka
-            </button>
+            />
         </div>
-
         <div class="frog-cage">
-            <img src="../assets/figma_components/frog-red.png"
-            class="red-frog"/>
-            <img src="../assets/figma_components/frog-yellow-blue.png"
-            class="yellow-blue-frog"/>
+            <img
+                src="../assets/figma_components/frog-red.avif"
+                class="red-frog"
+                alt="En liten sittande röd groda med svarta och gröna fläckar"
+            />
+            <img
+                src="../assets/figma_components/frog-yellow-blue.avif"
+                class="yellow-blue-frog"
+                alt="En liten sittande blå groda med svarta och gula fläckar"
+            />
         </div>
     </div>
 </template>
@@ -58,25 +59,6 @@ const handleClick = () => {
         display: flex;
         gap: 30px;
         justify-content: center;
-       
-
-        .cookie-button {
-            background: url('/src/assets/figma_components/wood-sign-button.png')
-            no-repeat center / cover;
-            border: none;
-            width: 117px;
-            height: 57px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            cursor: pointer;
-            text-align: center;
-            font-size: $h2-fs-mobile;
-            font-family: 'Luckiest Guy', sans-serif;
-            color: #000;
-        }
     }
     .frog-cage {
         position: fixed;
@@ -84,20 +66,20 @@ const handleClick = () => {
         left: 50%;
 
         .red-frog {
-        position: absolute;
-        transform: scaleX(-1);
-        width: 80px; 
-        height: auto; 
-        bottom: 1px;
-        left: 63px;
-        rotate: 10deg;
+            position: absolute;
+            transform: scaleX(-1);
+            width: 80px;
+            height: auto;
+            bottom: 1px;
+            left: 63px;
+            rotate: 10deg;
         }
 
         .yellow-blue-frog {
             width: 80px;
             height: auto;
             transform: scaleX(-1);
-            position:absolute;
+            position: absolute;
             left: -135px;
             bottom: 10px;
             rotate: 10deg;
@@ -106,9 +88,9 @@ const handleClick = () => {
 }
 
 p {
-        font-size: $h2-fs-mobile;
-        font-family: 'Luckiest Guy', sans-serif;
-        color: #000;
+    font-size: $h2-fs-mobile;
+    font-family: 'Luckiest Guy', sans-serif;
+    color: #000;
 }
 
 @media (min-width: 1280px) {

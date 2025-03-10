@@ -4,7 +4,10 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 const startGame = () => {
-    router.push('/game');
+    router.push({
+    path: '/game',
+    query: { startTimer: 'true' }
+  });
 };
 </script>
 
@@ -20,8 +23,9 @@ const startGame = () => {
                 </p>
                 <p>Dra med musen över djungeln för att leta efter grodan!</p>
                 <img
-                    src="../assets/figma_components/frog-blue.png"
+                    src="../assets/figma_components/frog-blue.avif"
                     class="blue-frog"
+                    alt="Liten bild på en groda"
                 />
 
                 <div class="start-game-btn">
@@ -47,11 +51,11 @@ main {
         position: relative;
 
         .blue-frog {
-            width: 160px;
+            width: 90px;
             height: auto;
             position: absolute;
-            right: -5px;
-            top: -65px;
+            right: -35px;
+            top: -30px;
         }
 
         h2 {
@@ -67,7 +71,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url(../assets/figma_components/wood-sign-button.png);
+            background-image: url(../assets/figma_components/wood-sign-button.avif);
             background-size: contain;
             background-position: center;
             width: 164px;
@@ -85,8 +89,8 @@ main {
             padding: 2rem;
             margin-top: 70px;
 
-            .blueyellow-frog {
-                width: 170px;
+            .blue-frog {
+                width: 130px;
                 height: auto;
                 position: absolute;
                 right: -30px;
@@ -109,8 +113,8 @@ main {
             padding: 2rem;
             margin-top: 70px;
 
-            .blueyellow-frog {
-                width: 250px;
+            .blue-frog {
+                width: 175px;
                 height: auto;
                 position: absolute;
                 right: -60px;
