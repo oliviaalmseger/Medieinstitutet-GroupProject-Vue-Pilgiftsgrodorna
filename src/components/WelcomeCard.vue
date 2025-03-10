@@ -34,11 +34,11 @@ const readMore = () => {
 
         <div class="welcome-frogs">
             <img
-                src="../assets/figma_components/frog-red.png"
+                src="../assets/figma_components/frog-red.avif"
                 class="red-frog"
                 alt="Liten bild på en groda"
             /><img
-                src="../assets/figma_components/frog-yellow-blue.png"
+                src="../assets/figma_components/frog-yellow-blue.avif"
                 class="blueyellow-frog"
                 alt="Liten bild på en groda"
             />
@@ -87,7 +87,7 @@ const readMore = () => {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(../assets/figma_components/wood-sign-button.png);
+        background-image: url(../assets/figma_components/wood-sign-button.avif);
         background-size: contain;
         background-position: center;
         width: 100px;

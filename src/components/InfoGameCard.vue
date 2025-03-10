@@ -20,7 +20,7 @@ const startGame = () => {
                 </p>
                 <p>Dra med musen över djungeln för att leta efter grodan!</p>
                 <img
-                    src="../assets/figma_components/frog-blue.png"
+                    src="../assets/figma_components/frog-blue.avif"
                     class="blue-frog"
                     alt="Liten bild på en groda"
                 />
@@ -68,7 +68,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url(../assets/figma_components/wood-sign-button.png);
+            background-image: url(../assets/figma_components/wood-sign-button.avif);
             background-size: contain;
             background-position: center;
             width: 164px;
