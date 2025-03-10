@@ -58,15 +58,14 @@ const updateTime = (newTime) => {
 <style scoped lang="scss">
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 65vh;
     position: relative;
-}
 
-.pop-up {
+    .pop-up {
     position: absolute;
-    bottom: 50%;
     left: 50%;
+    bottom: 30%;
     transform: translate(-50%, -50%);
-    padding: 2rem;
+    }
 }
 </style>

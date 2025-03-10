@@ -76,7 +76,7 @@ right: 0;
 display: flex;
 justify-content: center;
 align-items: center;
-padding-bottom: 20px;
+padding-bottom: 50px;
 
   .timer {
     text-align: center;
