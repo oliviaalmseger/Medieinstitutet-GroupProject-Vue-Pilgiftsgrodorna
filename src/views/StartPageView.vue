@@ -11,3 +11,4 @@ import CardArticle from '../components/CardArticle.vue';
         </div>
     </main>
 </template>
+ 
