@@ -37,3 +37,9 @@ body::before {
     background-attachment: fixed;
     overflow: hidden;
 }
+
+.startpage-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
