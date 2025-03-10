@@ -46,7 +46,7 @@ const updateTime = (newTime) => {
             heading="Grattis!"
             content="Du hittade grodan!"
             :timer="'Det tog dig ' + timerValue + ' sekunder att hitta grodan!'" 
-            image="src/assets/figma_components/frog-red.png"
+            image="src/assets/figma_components/frog-red.avif"
             imageClass="red-frog"
             closeButton="Spela igen"
             @close="playAgain"

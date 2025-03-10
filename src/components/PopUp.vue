@@ -54,7 +54,7 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/figma_components/wood-sign-button.png);
+    background-image: url(../assets/figma_components/wood-sign-button.avif);
     background-size: contain;
     background-position: center;
     width: 100px;
