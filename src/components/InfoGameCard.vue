@@ -60,18 +60,6 @@ const startGame = () => {
         p {
             margin-bottom: 2rem;
         }
-
-        .start-game-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-image: url(../assets/figma_components/wood-sign-button.avif);
-            background-size: contain;
-            background-position: center;
-            width: 164px;
-            height: 57px;
-            margin-bottom: 1.5rem;
-        }
     }
 }
 

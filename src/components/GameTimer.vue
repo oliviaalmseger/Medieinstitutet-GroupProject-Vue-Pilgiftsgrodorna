@@ -87,7 +87,7 @@ padding-bottom: 50px;
     justify-content: center;
     align-items: center;
 
-    background-image: url(../assets/figma_components/wood-sign-button.avif);
+    background: url('/src/assets/figma_components/wood-sign-button.avif'); 
     background-size: contain;
     width: 190px;
     height: 55px;
