@@ -28,12 +28,14 @@ const handleClick = () => {
         </div>
         <div class="frog-cage">
             <img
-                src="../assets/figma_components/frog-red.png"
+                src="../assets/figma_components/frog-red.avif"
                 class="red-frog"
+                alt="En liten sittande röd groda med svarta och gröna fläckar"
             />
             <img
-                src="../assets/figma_components/frog-yellow-blue.png"
+                src="../assets/figma_components/frog-yellow-blue.avif"
                 class="yellow-blue-frog"
+                alt="En liten sittande blå groda med svarta och gula fläckar"
             />
         </div>
     </div>

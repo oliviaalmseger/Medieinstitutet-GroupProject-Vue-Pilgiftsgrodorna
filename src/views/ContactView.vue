@@ -1,11 +1,13 @@
 <script setup>
 import WoodButton from '../components/WoodButton.vue';
+import Popup from '../components/FormPopup.vue';
 import { ref, computed } from 'vue';
 
 const firstName = ref('');
 const lastName = ref('');
 const email = ref('');
 const message = ref('');
+const showFormPopup = ref(false);
 
 const isValidEmail = () => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
 
@@ -16,7 +18,7 @@ const isFormValid = computed(
 const handleSubmit = (event) => {
     event.preventDefault();
     if (isFormValid.value) {
-        alert('Formuläret har skickats!');
+        showFormPopup.value = true;
         resetForm();
     }
 };
@@ -91,6 +93,7 @@ const resetForm = () => {
             </fieldset>
         </form>
     </div>
+    <Popup v-if="showFormPopup" :isVisible="showFormPopup" message="Formuläret har skickats!" @close="showFormPopup = false" />
 </template>
 
 <style scoped lang="scss">

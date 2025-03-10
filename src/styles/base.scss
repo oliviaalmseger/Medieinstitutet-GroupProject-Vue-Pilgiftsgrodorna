@@ -20,7 +20,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../assets/figma_components/main-background.jpg');
+    background-image: url('../assets/figma_components/main-background.avif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,7 +30,7 @@ body::before {
 }
 
 .game-page::before {
-    background-image: url('../assets/figma_components/game-background.jpg');
+    background-image: url('../assets/figma_components/game-background.avif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
