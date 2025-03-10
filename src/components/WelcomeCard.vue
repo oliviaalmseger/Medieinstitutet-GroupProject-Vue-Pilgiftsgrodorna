@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import WoodButton from '../components/WoodButton.vue';
 
 const targetReadMore = ref(null);
 
@@ -44,7 +45,7 @@ const readMore = () => {
             />
         </div>
         <div class="read-more-btn">
-            <button @click="readMore">Läs mer</button>
+            <WoodButton label="Läs mer" @click="readMore" />
             <CardArticle ref="targetReadMore" />
         </div>
     </section>

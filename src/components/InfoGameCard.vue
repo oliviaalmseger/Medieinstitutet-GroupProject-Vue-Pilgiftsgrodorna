@@ -1,5 +1,6 @@
 <script setup>
 import { useRouter } from 'vue-router';
+import WoodButton from '../components/WoodButton.vue';
 
 const router = useRouter();
 
@@ -26,7 +27,7 @@ const startGame = () => {
                 />
 
                 <div class="start-game-btn">
-                    <button @click="startGame">Starta spelet</button>
+                    <WoodButton label="Starta spelet" @click="startGame" />
                 </div>
             </section>
         </div>
