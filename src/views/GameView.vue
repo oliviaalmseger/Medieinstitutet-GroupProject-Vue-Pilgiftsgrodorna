@@ -32,7 +32,7 @@ function playAgain() {
             v-if="frogIsFound"
             heading="Grattis!"
             content="Du hittade grodan!"
-            image="src/assets/figma_components/frog-red.png"
+            image="src/assets/figma_components/frog-red.avif"
             imageClass="red-frog"
             closeButton="Spela igen"
             @close="playAgain"

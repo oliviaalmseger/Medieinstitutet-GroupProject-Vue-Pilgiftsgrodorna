@@ -62,7 +62,7 @@ const handleClick = (event) => {
 
 <style scoped lang="scss">
 .button {
-    background: url('/src/assets/figma_components/wood-sign-button.png')
+    background: url('/src/assets/figma_components/wood-sign-button.avif')
         no-repeat center / cover;
     border: none;
     width: 117px;
