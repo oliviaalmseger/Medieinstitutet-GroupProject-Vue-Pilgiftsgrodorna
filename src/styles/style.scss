@@ -1,9 +1,10 @@
 @import 'partials/partials.scss';
+@import 'normalize.scss';
 
 @import 'base.scss';
 
 @media (min-width: 834px) {
-    @import 'tablet.scss';
+    @import 'FrogStyles/FrogStylesTablet.scss';
 }
 
 @media (min-width: 1280px) {
