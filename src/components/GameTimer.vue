@@ -23,6 +23,11 @@ const stopTimer = () => {
     clearInterval(timer);
 };
 
+// Återställ timern (nollställ tid)
+const resetTimer = () => {
+  timeElapsed.value = 0;
+};
+
 // Starta timern om startTimer är true
 onMounted(() => {
   if (props.startTimer) {
@@ -33,6 +38,7 @@ onMounted(() => {
 // Pausa eller starta timern om startTimers värde ändras
 watch(() => props.startTimer, (newValue) => {
   if (newValue) {
+    resetTimer();
     startTimer(); 
   } else {
     stopTimer();

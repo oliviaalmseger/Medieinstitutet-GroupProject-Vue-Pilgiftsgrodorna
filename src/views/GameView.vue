@@ -28,6 +28,7 @@ function foundFrog() {
 function playAgain() {
     frogIsFound.value = false;
     hidingFrogRef.value?.setRandomFrogPosition();
+    stopTimer.value = false;
 }
 
 const shouldTimerStart = computed(() => !stopTimer.value);
@@ -44,7 +45,7 @@ const updateTime = (newTime) => {
             v-if="frogIsFound"
             heading="Grattis!"
             content="Du hittade grodan!"
-            :timer="'Det tog dig ' + timerValue + ' att hitta grodan!'" 
+            :timer="'Det tog dig ' + timerValue + ' sekunder att hitta grodan!'" 
             image="src/assets/figma_components/frog-red.png"
             imageClass="red-frog"
             closeButton="Spela igen"
