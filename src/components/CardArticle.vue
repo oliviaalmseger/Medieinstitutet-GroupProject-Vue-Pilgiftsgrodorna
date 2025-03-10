@@ -1,6 +1,5 @@
 <script setup>
 import InfoCard from './InfoCard.vue';
-import WelcomeCard from './WelcomeCard.vue';
 import { ref } from 'vue';
 
 const targetReadMore = ref(null);
@@ -11,9 +10,6 @@ defineExpose({
 </script>
 
 <template>
-    <main>
-        <div class="startpage-container">
-            <WelcomeCard />
             <article class="infocard-container">
                 <InfoCard
                     ref="targetReadMore"
@@ -49,38 +45,21 @@ defineExpose({
                     imageClass="yellow-frog"
                 />
             </article>
-        </div>
-    </main>
 </template>
 
 <style scoped lang="scss">
-.startpage-container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 4rem;
-
     .infocard-container {
         display: flex;
         flex-direction: column;
         gap: 70px;
     }
-}
-
-@media (min-width: 834px) {
-    .startpage-container {
-        width: 620px;
-    }
-}
 
 @media (min-width: 1280px) {
-    .startpage-container {
-        width: 1124px;
 
         .infocard-container {
             flex-direction: row;
             flex-wrap: wrap;
             width: 1124px;
-        }
     }
 }
 </style>

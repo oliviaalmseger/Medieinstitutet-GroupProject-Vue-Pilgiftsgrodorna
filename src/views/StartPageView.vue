@@ -1,7 +1,13 @@
 <script setup lang="js">
+import WelcomeCard from '../components/WelcomeCard.vue';
 import CardArticle from '../components/CardArticle.vue';
 </script>
 
 <template>
-    <CardArticle />
+    <main>
+        <div class="startpage-container">
+            <WelcomeCard />
+            <CardArticle />
+        </div>
+    </main>
 </template>
