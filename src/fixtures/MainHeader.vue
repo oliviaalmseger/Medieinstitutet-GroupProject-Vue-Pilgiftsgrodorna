@@ -50,7 +50,7 @@ header {
         gap: 10px;
 
         .nav-bg {
-            background-image: url(../assets/figma_components/nav-button.png);
+            background-image: url(../assets/figma_components/nav-button.avif);
             background-size: cover;
             background-position: center;
             width: 90px;
