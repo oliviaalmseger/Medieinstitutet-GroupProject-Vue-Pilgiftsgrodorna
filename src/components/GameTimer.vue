@@ -59,15 +59,38 @@ const formattedTime = computed(() => {
 </script>
 
 <template>
-  <div class="timer">
-    Spelad tid: {{ formattedTime }}
+  <div class="timer-container">
+    <p class="timer">
+      Spelad tid: {{ formattedTime }}
+    </p>
   </div>
 </template>
 
-<style scoped>
-.timer {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+<style scoped lang="scss">
+
+.timer-container {
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 20px;
+
+  .timer {
+    text-align: center;
+    font-family: $button-font;
+    font-size: $button-fs;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../assets/figma_components/wood-sign-button.png);
+    background-size: contain;
+    width: 190px;
+    height: 55px;
+  }
 }
 </style>
