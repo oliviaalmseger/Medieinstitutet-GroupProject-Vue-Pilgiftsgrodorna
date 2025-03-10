@@ -3,8 +3,11 @@ defineProps({
     heading: String,
     content: String,
     image: String,
-    imageClass: String, 
+    imageClass: String,
+    closeButton: String,
 });
+
+const emit = defineEmits(['close']);
 </script>
 
 <template>
@@ -12,6 +15,9 @@ defineProps({
         <h3>{{ heading }}</h3>
         <p>{{ content }}</p>
         <img :src="image" :class="imageClass" alt="Liten bild på en groda" />
+        <div class="play-again-btn">
+            <button @click="emit('close')">{{ closeButton }}</button>
+        </div>
     </div>
 </template>
 
@@ -29,8 +35,9 @@ div {
     align-items: center;
     justify-content: center;
 
-    h3 {
+    p {
         margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .red-frog {
@@ -42,6 +49,22 @@ div {
     }
 }
 
+.play-again-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/figma_components/wood-sign-button.png);
+    background-size: contain;
+    background-position: center;
+    width: 100px;
+    height: 40px;
+    border: 0;
+    border-radius: 0;
+
+    button {
+        font-size: 1rem;
+    }
+}
 @media (min-width: 834px) {
     div {
         border: 8px solid $border-color;
