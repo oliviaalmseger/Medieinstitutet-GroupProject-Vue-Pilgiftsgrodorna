@@ -1,4 +1,6 @@
 <script setup>
+import WoodButton from './WoodButton.vue';
+
 defineProps({
     heading: String,
     content: String,
@@ -17,7 +19,8 @@ const emit = defineEmits(['close']);
         <p>{{ content }} {{ timer }}</p>
         <img :src="image" :class="imageClass" alt="Liten bild på en groda" />
         <div class="play-again-btn">
-            <button @click="emit('close')">{{ closeButton }}</button>
+            <WoodButton @click="emit('close')" :label="closeButton" />
+
         </div>
     </div>
 </template>
