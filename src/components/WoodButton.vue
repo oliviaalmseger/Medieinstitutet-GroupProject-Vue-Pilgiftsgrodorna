@@ -76,11 +76,19 @@ const handleClick = (event) => {
     font-family: 'Luckiest Guy', sans-serif;
     color: #000;
     text-decoration: none;
+
+    &:hover {
+        color: red;
+    }
 }
 
 .button:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+
+    &:hover {
+        color: #000;
+    }
 }
 
 .button span {
