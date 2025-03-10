@@ -40,14 +40,6 @@ div {
         margin-bottom: 20px;
         margin-top: 15px;
     }
-
-    .red-frog {
-        position: absolute;
-        width: 185px;
-        height: auto;
-        bottom: 120px;
-        left: -60px;
-    }
 }
 
 .play-again-btn {
@@ -71,11 +63,6 @@ div {
         border: 8px solid $border-color;
         width: 300px;
         height: 210px;
-
-        .red-frog {
-            width: 215px;
-            bottom: 150px;
-        }
     }
 }
 
@@ -83,10 +70,7 @@ div {
     div {
         width: 300px;
         height: 220px;
-
-        .red-frog {
-            bottom: 150px;
-        }
     }
 }
 </style>
+ 
