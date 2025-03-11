@@ -68,4 +68,5 @@ const updateTime = (newTime) => {
     transform: translate(-50%, -50%);
     }
 }
+
 </style>
