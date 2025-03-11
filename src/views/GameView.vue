@@ -9,6 +9,7 @@ import RedFrog from '@/assets/figma_components/frog-red.avif';
 
 onMounted(() => {
     document.body.classList.add('game-page');
+    hidingFrogRef.value?.setRandomFrogPosition();
 });
 
 onUnmounted(() => {
@@ -42,6 +43,7 @@ const updateTime = (newTime) => {
     <div class="container">
         <GameTimer :startTimer="shouldTimerStart" @time-updated="updateTime" />
         <WoodButton class="back-btn" label="Tillbaka" to="/startGame" />
+        <HidingFrog ref="hidingFrogRef" @found="foundFrog" />
         <PopUp
             class="pop-up"
             v-if="frogIsFound"
@@ -53,7 +55,7 @@ const updateTime = (newTime) => {
             closeButton="Spela igen"
             @close="playAgain"
         />
-        <HidingFrog ref="hidingFrogRef" @found="foundFrog" />
+        
     </div>
 </template>
 
