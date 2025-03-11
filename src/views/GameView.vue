@@ -4,8 +4,8 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 import PopUp from '../components/PopUp.vue';
 import GameTimer from '../components/GameTimer.vue';
 import HidingFrog from '../components/HidingFrog.vue';
+import WoodButton from '../components/WoodButton.vue';
 import RedFrog from '@/assets/figma_components/frog-red.avif';
-
 
 onMounted(() => {
     document.body.classList.add('game-page');
@@ -23,7 +23,7 @@ const timerValue = ref('00:00');
 
 function foundFrog() {
     frogIsFound.value = true;
-    stopTimer.value = true; 
+    stopTimer.value = true;
 }
 
 function playAgain() {
@@ -34,20 +34,21 @@ function playAgain() {
 
 const shouldTimerStart = computed(() => !stopTimer.value);
 const updateTime = (newTime) => {
-  timerValue.value = newTime;
+    timerValue.value = newTime;
 };
 </script>
 
 <template>
     <div class="container">
         <GameTimer :startTimer="shouldTimerStart" @time-updated="updateTime" />
+        <WoodButton class="back-btn" label="Tillbaka" to="/startGame" />
         <PopUp
             class="pop-up"
             v-if="frogIsFound"
             heading="Grattis!"
             content="Du hittade grodan!"
-            :timer="'Det tog dig ' + timerValue + ' sekunder att hitta grodan!'" 
-            :image="RedFrog" 
+            :timer="'Det tog dig ' + timerValue + ' sekunder att hitta grodan!'"
+            :image="RedFrog"
             imageClass="red-frog"
             closeButton="Spela igen"
             @close="playAgain"
@@ -63,11 +64,16 @@ const updateTime = (newTime) => {
     position: relative;
 
     .pop-up {
-    position: absolute;
-    left: 50%;
-    bottom: 30%;
-    transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        bottom: 30%;
+        transform: translate(-50%, -50%);
     }
 }
-
+.back-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    transform: translateX(-50%);
+}
 </style>
