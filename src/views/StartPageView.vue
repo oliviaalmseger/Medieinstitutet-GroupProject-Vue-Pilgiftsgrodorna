@@ -1,4 +1,4 @@
-<script setup lang="js">
+<script setup>
 import WelcomeCard from '../components/WelcomeCard.vue';
 import CardArticle from '../components/CardArticle.vue';
 </script>

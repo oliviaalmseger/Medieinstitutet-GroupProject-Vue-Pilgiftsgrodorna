@@ -1,4 +1,4 @@
-<script setup lang="js">
+<script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 
 import PopUp from '../components/PopUp.vue';
