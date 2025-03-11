@@ -1,4 +1,4 @@
-<script setup lang="js">
+<script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 
 import PopUp from '../components/PopUp.vue';
@@ -68,5 +68,5 @@ const updateTime = (newTime) => {
     transform: translate(-50%, -50%);
     }
 }
-</style>
 
+</style>

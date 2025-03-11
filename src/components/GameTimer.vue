@@ -1,4 +1,4 @@
-<script setup lang="js">
+<script setup>
 import { ref, computed, onMounted, onUnmounted, watch, defineEmits } from 'vue';
 
 const emit = defineEmits();

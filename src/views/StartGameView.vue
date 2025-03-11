@@ -1,4 +1,4 @@
-<script setup lang="js">
+<script setup>
 import InfoGameCard from '../components/InfoGameCard.vue';
 </script>
 
