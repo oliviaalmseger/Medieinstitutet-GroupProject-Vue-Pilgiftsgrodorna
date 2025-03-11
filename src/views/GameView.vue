@@ -59,7 +59,7 @@ const updateTime = (newTime) => {
 <style scoped lang="scss">
 .container {
     width: 100vw;
-    height: 65vh;
+    height: 100vh;
     position: relative;
 
     .pop-up {
