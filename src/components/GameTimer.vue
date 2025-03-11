@@ -85,6 +85,7 @@ padding-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 9px;
 
     background: url('/src/assets/figma_components/wood-sign-big.avif')
       no-repeat center / cover;

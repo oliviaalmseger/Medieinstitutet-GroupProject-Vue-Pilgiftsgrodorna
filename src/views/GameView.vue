@@ -4,6 +4,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 import PopUp from '../components/PopUp.vue';
 import GameTimer from '../components/GameTimer.vue';
 import HidingFrog from '../components/HidingFrog.vue';
+import RedFrog from '@/assets/figma_components/frog-red.avif';
 
 
 onMounted(() => {
@@ -46,7 +47,7 @@ const updateTime = (newTime) => {
             heading="Grattis!"
             content="Du hittade grodan!"
             :timer="'Det tog dig ' + timerValue + ' sekunder att hitta grodan!'" 
-            image="src/assets/figma_components/frog-red.avif"
+            :image="RedFrog" 
             imageClass="red-frog"
             closeButton="Spela igen"
             @close="playAgain"
