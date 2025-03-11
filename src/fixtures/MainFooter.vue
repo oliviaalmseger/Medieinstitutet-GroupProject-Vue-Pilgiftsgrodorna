@@ -1,4 +1,4 @@
-<script setup lang="js"></script>
+<script setup></script>
 
 <template>
     <footer>
@@ -9,9 +9,6 @@
 </template>
 
 <style scoped lang="scss">
-#app {
-    position: relative;
-
     footer {
         width: 100%;
         position: absolute;
@@ -28,5 +25,4 @@
             font-size: 1rem;
         }
     }
-}
 </style>

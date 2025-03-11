@@ -1,4 +1,4 @@
-<script setup lang="js">
+<script setup>
 import { ref, computed, onMounted, onUnmounted, watch, defineEmits } from 'vue';
 
 const emit = defineEmits();
@@ -79,15 +79,16 @@ align-items: center;
 padding-bottom: 50px;
 
   .timer {
-    text-align: center;
     font-family: $button-font;
     font-size: $button-fs;
     color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 9px;
 
-    background-image: url(../assets/figma_components/wood-sign-button.avif);
+    background: url('/src/assets/figma_components/wood-sign-big.avif')
+      no-repeat center / cover;
     background-size: contain;
     width: 190px;
     height: 55px;

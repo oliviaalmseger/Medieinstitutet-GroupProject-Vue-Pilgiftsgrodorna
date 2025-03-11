@@ -1,4 +1,4 @@
-<script setup lang="js">
+<script setup>
 import { RouterLink } from 'vue-router';
 </script>
 
@@ -85,7 +85,7 @@ header {
         }
 
         nav {
-        gap: 15px;
+            gap: 15px;
 
             .nav-bg {
                 width: 140px;
@@ -98,5 +98,4 @@ header {
         }
     }
 }
-
 </style>
