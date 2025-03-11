@@ -46,7 +46,7 @@ const readMore = () => {
         </div>
         <div class="read-more-btn">
             <WoodButton label="Läs mer" @click="readMore" />
-            <div ref="targetReadMore"></div> 
+            <div ref="targetReadMore"></div>
         </div>
     </section>
 </template>
@@ -66,20 +66,8 @@ const readMore = () => {
         margin: 0.5rem 0px;
     }
 
-    .read-more-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../assets/figma_components/wood-sign-button.avif);
-        background-size: contain;
-        background-position: center;
-        width: 100px;
-        height: 40px;
-        margin: 2rem 0rem 1rem 0rem;
-
-        button {
-            font-size: 1rem;
-        }
+    button {
+        width: 80px;
     }
 }
 
@@ -99,9 +87,9 @@ const readMore = () => {
             margin-bottom: 1rem;
         }
 
-        .read-more-btn {
+        button {
             width: 170px;
-            height: 62px;
+            height: 80px;
             margin: 2rem 0rem 3rem 0rem;
         }
     }
@@ -120,7 +108,7 @@ const readMore = () => {
             width: 700px;
         }
 
-        .read-more-btn {
+        button {
             margin: 2rem 0rem;
         }
     }

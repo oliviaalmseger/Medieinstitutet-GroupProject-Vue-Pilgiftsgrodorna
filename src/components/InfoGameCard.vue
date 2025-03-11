@@ -30,7 +30,7 @@ const startGame = () => {
                 />
 
                 <div class="start-game-btn">
-                    <WoodButton label="Starta spelet" @click="startGame" />
+                    <WoodButton class="button" label="Starta spelet" @click="startGame" />
                 </div>
             </section>
         </div>
@@ -60,17 +60,22 @@ const startGame = () => {
         p {
             margin-bottom: 2rem;
         }
+    }
 
-        .start-game-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-image: url(../assets/figma_components/wood-sign-button.avif);
-            background-size: contain;
-            background-position: center;
-            width: 164px;
-            height: 57px;
-            margin-bottom: 1.5rem;
+    .start-game-btn {
+        background: url(../assets/figma_components/wood-sign-big.avif)
+        no-repeat center / cover;
+        background-size: contain;
+        width: 140px;
+        height: 55px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5px;
+
+        .button {
+            background: none;
         }
     }
 }
@@ -85,6 +90,12 @@ const startGame = () => {
             p {
                 margin-bottom: 3rem;
             }
+        }
+
+        .start-game-btn {
+        width: 170px;
+        height: 80px;
+        
         }
     }
 }

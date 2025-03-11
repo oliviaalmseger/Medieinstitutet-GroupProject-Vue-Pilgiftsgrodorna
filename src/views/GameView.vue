@@ -69,3 +69,4 @@ const updateTime = (newTime) => {
     }
 }
 </style>
+
