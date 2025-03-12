@@ -1,15 +1,6 @@
 <script setup>
-import { useRouter } from 'vue-router';
 import WoodButton from '../components/WoodButton.vue';
 
-const router = useRouter();
-
-const startGame = () => {
-    router.push({
-    path: '/game',
-    query: { startTimer: 'true' }
-  });
-};
 </script>
 
 <template>
@@ -30,7 +21,7 @@ const startGame = () => {
                 />
 
                 <div class="start-game-btn">
-                    <WoodButton class="button" label="Starta spelet" @click="startGame" />
+                    <WoodButton class="button" label="Starta spelet" to="/game" />
                 </div>
             </section>
         </div>
