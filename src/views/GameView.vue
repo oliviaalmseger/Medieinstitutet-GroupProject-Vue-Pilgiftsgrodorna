@@ -20,7 +20,7 @@ const frogIsFound = ref(false);
 const hidingFrogRef = ref(null);
 
 const stopTimer = ref(false);
-const timerValue = ref('00:00');
+const timerValue = ref('0 sekunder');
 
 function foundFrog() {
     frogIsFound.value = true;
