@@ -38,9 +38,9 @@ const resetForm = () => {
                 <div class="contact-field">
                     <label for="firstName">Förnamn</label>
                     <input
-                        type="text"
                         id="firstName"
                         v-model="firstName"
+                        type="text"
                         autocomplete="given-name"
                         required
                         placeholder="Skriv ditt förnamn här"
@@ -50,9 +50,9 @@ const resetForm = () => {
                 <div class="contact-field">
                     <label for="lastName">Efternamn</label>
                     <input
-                        type="text"
                         id="lastName"
                         v-model="lastName"
+                        type="text"
                         autocomplete="family-name"
                         required
                         placeholder="Skriv ditt efternamn här"
@@ -62,9 +62,9 @@ const resetForm = () => {
                 <div class="contact-field">
                     <label for="email">E-post</label>
                     <input
-                        type="email"
                         id="email"
                         v-model="email"
+                        type="email"
                         autocomplete="email"
                         required
                         :class="{ error: !isValidEmail() && email }"
@@ -82,7 +82,7 @@ const resetForm = () => {
                         v-model="message"
                         required
                         placeholder="Skriv ditt meddelande här"
-                    ></textarea>
+                    />
                 </div>
 
                 <WoodButton
@@ -93,7 +93,12 @@ const resetForm = () => {
             </fieldset>
         </form>
     </div>
-    <Popup v-if="showFormPopup" :isVisible="showFormPopup" message="Formuläret har skickats!" @close="showFormPopup = false" />
+    <Popup
+        v-if="showFormPopup"
+        :isVisible="showFormPopup"
+        message="Meddelandet har skickats!"
+        @close="showFormPopup = false"
+    />
 </template>
 
 <style scoped lang="scss">

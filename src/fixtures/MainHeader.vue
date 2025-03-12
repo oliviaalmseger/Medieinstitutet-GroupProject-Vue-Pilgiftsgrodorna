@@ -11,15 +11,24 @@ import { RouterLink } from 'vue-router';
         />
 
         <nav>
-            <div class="nav-bg" aria-label="Vit planka med trädetaljer på kanterna som utgör bakgrunden till navigationsknappen Hem">
+            <div
+                class="nav-bg"
+                aria-label="Vit planka med trädetaljer på kanterna som utgör bakgrunden till navigationsknappen Hem"
+            >
                 <RouterLink class="nav-btn" to="/">Hem</RouterLink>
             </div>
 
-            <div class="nav-bg" aria-label="Vit planka med trädetaljer på kanterna som utgör bakgrunden till navigationsknappen Spel">
+            <div
+                class="nav-bg"
+                aria-label="Vit planka med trädetaljer på kanterna som utgör bakgrunden till navigationsknappen Spel"
+            >
                 <RouterLink class="nav-btn" to="/startGame">Spel</RouterLink>
             </div>
 
-            <div class="nav-bg" aria-label="Vit planka med trädetaljer på kanterna som utgör bakgrunden till navigationsknappen Kontakt">
+            <div
+                class="nav-bg"
+                aria-label="Vit planka med trädetaljer på kanterna som utgör bakgrunden till navigationsknappen Kontakt"
+            >
                 <RouterLink class="nav-btn" to="/contactView"
                     >Kontakt</RouterLink
                 >

@@ -1,21 +1,34 @@
-import globals from 'globals'
-import pluginJs from '@eslint/js'
-import eslintConfigPrettier from 'eslint-config-prettier'
-
-/** @type {import('eslint').Linter.Config[]} */
+import eslintPluginVue from 'eslint-plugin-vue';
+import vueParser from 'vue-eslint-parser';
 
 export default [
-    { files: ['**/*.{js,mjs,cjs,ts}'] },
-    eslintConfigPrettier, // Load first to avoid rule overrides
     {
-        languageOptions: { globals: globals.browser },
+        files: ['**/*.vue'],
+        languageOptions: {
+            parser: vueParser,
+            parserOptions: {
+                ecmaVersion: 'latest',
+                sourceType: 'module',
+            },
+        },
+        plugins: { vue: eslintPluginVue },
         rules: {
-            camelcase: 'error',
-            'comma-dangle': ['error', 'always-multiline'],
-            curly: ['error', 'all'],
+            ...eslintPluginVue.configs['recommended'].rules,
+            'vue/no-unused-vars': 'warn',
+            quotes: ['error', 'single'],
             'no-console': 'warn',
-            quotes: ['error', 'single'], // Enforce single quotes
+            'no-debugger': 'error',
+            semi: ['error', 'always'],
+            eqeqeq: ['error', 'always'],
+            curly: ['error', 'all'],
+            'arrow-body-style': ['error', 'as-needed'],
+            'vue/html-self-closing': ['error', { html: { void: 'always' } }],
+            'vue/require-default-prop': 'error',
+            'vue/multi-word-component-names': 'error',
+            'vue/no-mutating-props': 'error',
+            'vue/no-v-html': 'warn',
+            'vue/no-use-v-if-with-v-for': 'error',
+            'vue/attributes-order': 'error',
         },
     },
-    pluginJs.configs.recommended,
-]
+];

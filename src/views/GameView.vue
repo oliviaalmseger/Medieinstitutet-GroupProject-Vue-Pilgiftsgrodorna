@@ -45,8 +45,8 @@ const updateTime = (newTime) => {
         <WoodButton class="back-btn" label="Tillbaka" to="/startGame" />
         <HidingFrog ref="hidingFrogRef" @found="foundFrog" />
         <PopUp
-            class="pop-up"
             v-if="frogIsFound"
+            class="pop-up"
             heading="Grattis!"
             content="Du hittade grodan!"
             :timer="'Det tog dig ' + timerValue + ' att hitta grodan!'"
@@ -55,7 +55,6 @@ const updateTime = (newTime) => {
             closeButton="Spela igen"
             @close="playAgain"
         />
-        
     </div>
 </template>
 

@@ -1,6 +1,5 @@
 <script setup>
 import WoodButton from '../components/WoodButton.vue';
-
 </script>
 
 <template>
@@ -21,7 +20,11 @@ import WoodButton from '../components/WoodButton.vue';
                 />
 
                 <div class="start-game-btn">
-                    <WoodButton class="button" label="Starta spelet" to="/game" />
+                    <WoodButton
+                        class="button"
+                        label="Starta spelet"
+                        to="/game"
+                    />
                 </div>
             </section>
         </div>
@@ -54,12 +57,12 @@ import WoodButton from '../components/WoodButton.vue';
     }
 
     .start-game-btn {
-        background: url(../assets/figma_components/wood-sign-big.avif)
-        no-repeat center / cover;
+        background: url(../assets/figma_components/wood-sign-big.avif) no-repeat
+            center / cover;
         background-size: contain;
         width: 140px;
         height: 55px;
-        
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -84,9 +87,8 @@ import WoodButton from '../components/WoodButton.vue';
         }
 
         .start-game-btn {
-        width: 170px;
-        height: 80px;
-        
+            width: 170px;
+            height: 80px;
         }
     }
 }

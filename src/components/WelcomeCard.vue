@@ -46,7 +46,7 @@ const readMore = () => {
         </div>
         <div class="read-more-btn">
             <WoodButton label="Läs mer" @click="readMore" />
-            <div ref="targetReadMore"></div>
+            <div ref="targetReadMore" />
         </div>
     </section>
 </template>

@@ -1,5 +1,5 @@
 <script setup>
-import { RouterView, useRoute  } from 'vue-router';
+import { RouterView, useRoute } from 'vue-router';
 import CookieBanner from './components/CookieBanner.vue';
 import MainHeader from './fixtures/MainHeader.vue';
 import MainFooter from './fixtures/MainFooter.vue';
