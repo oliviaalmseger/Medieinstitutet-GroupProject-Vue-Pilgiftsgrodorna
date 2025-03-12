@@ -49,7 +49,7 @@ const updateTime = (newTime) => {
             v-if="frogIsFound"
             heading="Grattis!"
             content="Du hittade grodan!"
-            :timer="'Det tog dig ' + timerValue + ' sekunder att hitta grodan!'"
+            :timer="'Det tog dig ' + timerValue + ' att hitta grodan!'"
             :image="RedFrog"
             imageClass="red-frog"
             closeButton="Spela igen"
