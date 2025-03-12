@@ -15,22 +15,24 @@ const props = defineProps({
     },
     type: {
         type: String,
-        default: 'button', 
+        default: 'button',
     },
     to: {
         type: String,
-        default: '', 
+        default: '',
     },
     back: {
         type: Boolean,
-        default: false, 
+        default: false,
     },
 });
 
 const emit = defineEmits();
 
 const handleClick = (event) => {
-    if (props.disabled) return;
+    if (props.disabled) {
+        return;
+    }
 
     if (props.back) {
         router.back();
@@ -43,11 +45,7 @@ const handleClick = (event) => {
 </script>
 
 <template>
-    <RouterLink
-        v-if="to"
-        :to="to"
-        class="button"
-    >
+    <RouterLink v-if="to" :to="to" class="button">
         <span>{{ label }}</span>
     </RouterLink>
 
@@ -55,8 +53,8 @@ const handleClick = (event) => {
         v-else
         :class="['button', { disabled: props.disabled }]"
         :disabled="props.disabled"
-        @click="handleClick"
         :type="type"
+        @click="handleClick"
     >
         <span>{{ label }}</span>
     </button>
@@ -97,4 +95,3 @@ const handleClick = (event) => {
     text-align: center;
 }
 </style>
-

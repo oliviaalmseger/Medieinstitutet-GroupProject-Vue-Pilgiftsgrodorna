@@ -93,7 +93,12 @@ const resetForm = () => {
             </fieldset>
         </form>
     </div>
-    <Popup v-if="showFormPopup" :isVisible="showFormPopup" message="Formuläret har skickats!" @close="showFormPopup = false" />
+    <Popup
+        v-if="showFormPopup"
+        :isVisible="showFormPopup"
+        message="Meddelandet har skickats!"
+        @close="showFormPopup = false"
+    />
 </template>
 
 <style scoped lang="scss">
