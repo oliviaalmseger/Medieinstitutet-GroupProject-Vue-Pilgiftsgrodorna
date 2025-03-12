@@ -1,15 +1,5 @@
 <script setup>
-import { useRouter } from 'vue-router';
 import WoodButton from '../components/WoodButton.vue';
-
-const router = useRouter();
-
-const startGame = () => {
-    router.push({
-    path: '/game',
-    query: { startTimer: 'true' }
-  });
-};
 </script>
 
 <template>
@@ -30,7 +20,11 @@ const startGame = () => {
                 />
 
                 <div class="start-game-btn">
-                    <WoodButton class="button" label="Starta spelet" @click="startGame" />
+                    <WoodButton
+                        class="button"
+                        label="Starta spelet"
+                        to="/game"
+                    />
                 </div>
             </section>
         </div>
@@ -63,12 +57,12 @@ const startGame = () => {
     }
 
     .start-game-btn {
-        background: url(../assets/figma_components/wood-sign-big.avif)
-        no-repeat center / cover;
+        background: url(../assets/figma_components/wood-sign-big.avif) no-repeat
+            center / cover;
         background-size: contain;
         width: 140px;
         height: 55px;
-        
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -93,9 +87,8 @@ const startGame = () => {
         }
 
         .start-game-btn {
-        width: 170px;
-        height: 80px;
-        
+            width: 170px;
+            height: 80px;
         }
     }
 }

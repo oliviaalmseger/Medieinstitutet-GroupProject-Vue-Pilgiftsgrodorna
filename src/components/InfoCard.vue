@@ -1,9 +1,9 @@
 <script setup>
 defineProps({
-    heading: String,
-    content: String,
-    image: String,
-    imageClass: String,
+    heading: { type: String, default: '' },
+    content: { type: String, default: '' },
+    image: { type: String, default: '' },
+    imageClass: { type: String, default: '' },
 });
 </script>
 

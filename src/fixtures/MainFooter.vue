@@ -9,20 +9,20 @@
 </template>
 
 <style scoped lang="scss">
-    footer {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 
-        .footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-            background-color: $text-color;
-            height: 35px;
-            font-family: $h3-font;
-            font-size: 1rem;
-        }
+        background-color: $text-color;
+        height: 35px;
+        font-family: $h3-font;
+        font-size: 1rem;
     }
+}
 </style>

@@ -4,7 +4,10 @@ import { defineProps, defineEmits } from 'vue';
 
 defineProps({
     isVisible: Boolean,
-    message: String,
+    message: {
+        type: String,
+        default: '',
+    },
 });
 
 const emit = defineEmits(['close']);
@@ -18,7 +21,7 @@ const close = () => {
     <div v-if="isVisible" class="popup-overlay" @click.self="close">
         <div class="popup-content">
             <p>{{ message }}</p>
-            <WoodButton @click="close" label="Stäng" />
+            <WoodButton label="Stäng" @click="close" />
         </div>
     </div>
 </template>

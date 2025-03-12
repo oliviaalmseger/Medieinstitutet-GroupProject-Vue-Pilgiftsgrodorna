@@ -17,13 +17,13 @@ const handleClick = () => {
         <div class="cookie-button-container">
             <WoodButton
                 label="Acceptera"
-                @click="handleClick"
                 aria-label="Acceptera cookies"
+                @click="handleClick"
             />
             <WoodButton
                 label="Neka"
-                @click="handleClick"
                 aria-label="Neka cookies"
+                @click="handleClick"
             />
         </div>
         <div class="frog-cage">

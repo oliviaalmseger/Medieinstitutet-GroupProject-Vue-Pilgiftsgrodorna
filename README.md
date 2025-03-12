@@ -7,16 +7,16 @@ This project is part of a school assignment where we developed a website about p
 The design was created in Figma by The Poison Dart Frogs, and we followed their guidelines for colors, typography, and layout during implementation.
 
 This website is our first project using Vue.js and includes:
-•	A landing section with information about poison dart frogs
-•	A contact page with a form
-•	An interactive game where players search for a hidden frog in the rainforest
+-	A landing section with information about poison dart frogs  
+-	A contact page with a form  
+-	An interactive game where players search for a hidden frog in the rainforest  
 
 This project allowed us to explore Vue.js, Vue Router, and component-based development in practice. It was also a valuable learning experience to work from an existing design and translate it into code.
 
 
 ### 📖 The Story Behind the Name
 As mentioned, the Poison Dart Frogs team ([Angelica Nylander](https://github.com/angien90), [Vy Petersson](https://github.com/tgvie), [Marie Lenvik](https://github.com/M-Lenvik) och [David Brunni](https://github.com/DavidBrunni)) created the design in Figma. Then, we – the Meerkats – took over both the design and the repo to bring it to life through code.
-But when we inherited the Poison Dart Frogs’ repo, an identity crisis hit us—who were we now? That’s when the Meerkats transformed and became… The Poison Meerkats!
+But when we inherited the Poison Dart Frogs’ repo, an identity crisis hit us—who were we now? That’s when the Meerkats transformed and became… The Poison Meerkats! 🎇 
 
 
 ## 🎥 Demo 
@@ -24,14 +24,14 @@ But when we inherited the Poison Dart Frogs’ repo, an identity crisis hit us�
 
 
 ## 📸 Screenshots 
-**Landing page - Desktop**
-![Landing page - Desktop](bild.png)
-**Game page - Desktop**
-![Game page - Desktop](bild.png)
+**Start page - Desktop**
+![Start page - Desktop](src/assets/screenshots/desktopStart.png)
 **Contact page - Desktop**
-![Contact page - Desktop](bild.png)
-
-**Tablet** osvosv 
+![Contact page - Desktop](src/assets/screenshots/desktopContact.png)
+**Game Lobby page - Desktop**
+![Game Lobby page - Desktop](src/assets/screenshots/desktopPreGame.png)
+**Game page - Desktop**
+![Game page - Desktop](src/assets/screenshots/desktopGame.png)
 
 
 ## 🧑‍💻 Tech Stack 
@@ -105,19 +105,17 @@ pnpm build
 ```
 
 
-##📌 Our Work Process
+## 📌 Our Work Process
 -	**Planning & Task Distribution** – Issues were created in GitHub.
 -	**Component Development** – We followed a mobile-first approach and used Vue components.
 -	**Pair Programming & Code Review** – Some parts were developed through pair programming. Each team member submitted at least two PRs, and every PR was reviewed by at least two team members before being merged.
 -	**Merging & Collaboration** – Merges from the develop branch to main were done together as a team to ensure quality and consistency.
 -	**Testing & Deployment** – The website was tested on various devices before launch.
 
-## 🔍 Validation & Lighthouse analysis 
-**HTML Validation**
-![HTML Validation](public/screenshots/htmlvalidation.png)
+## 🚦 Lighthouse analysis 
 
 **Lighthouse report**
-![Lighthouse report](public/screenshots/lighthouse.png)
+![Lighthouse report](src/assets/screenshots/desktopLighthouse.png)
 
 
 ## ✍️ Authors 

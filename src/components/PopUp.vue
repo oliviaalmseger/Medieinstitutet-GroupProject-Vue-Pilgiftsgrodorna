@@ -2,12 +2,12 @@
 import WoodButton from './WoodButton.vue';
 
 defineProps({
-    heading: String,
-    content: String,
-    timer: String, 
-    image: String,
-    imageClass: String,
-    closeButton: String,
+    heading: { type: String, default: '' },
+    content: { type: String, default: '' },
+    timer: { type: String, default: '' },
+    image: { type: String, default: '' },
+    imageClass: { type: String, default: '' },
+    closeButton: { type: String, default: '' },
 });
 
 const emit = defineEmits(['close']);
@@ -18,7 +18,7 @@ const emit = defineEmits(['close']);
         <h3>{{ heading }}</h3>
         <p>{{ content }} {{ timer }}</p>
         <img :src="image" :class="imageClass" alt="Liten bild på en groda" />
-        <WoodButton @click="emit('close')" :label="closeButton" />
+        <WoodButton :label="closeButton" @click="emit('close')" />
     </div>
 </template>
 
@@ -57,5 +57,3 @@ div {
     }
 }
 </style>
-
- 

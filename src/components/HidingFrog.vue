@@ -4,15 +4,12 @@ import { ref, defineEmits, defineExpose } from 'vue';
 const emit = defineEmits(['found']);
 const isVisible = ref(false); // If frog is visible
 
-const frogPosition = ref({
-    bottom: `${Math.floor(Math.random() * 65) + 5}%`,
-    right: `${Math.floor(Math.random() * 90) + 5}%`,
-});
+const frogPosition = ref({});
 
 function setRandomFrogPosition() {
     frogPosition.value = {
         bottom: `${Math.floor(Math.random() * 65) + 5}%`,
-        right: `${Math.floor(Math.random() * 90) + 5}%`,
+        right: `${Math.floor(Math.random() * 85) + 5}%`,
     };
     isVisible.value = false;
 }
@@ -30,8 +27,8 @@ defineExpose({ setRandomFrogPosition });
     <div
         class="frog"
         :class="{ visible: isVisible }"
-        v-on:mouseover="foundFrog"
         :style="{ bottom: frogPosition.bottom, right: frogPosition.right }"
+        v-on:mouseover="foundFrog"
     >
         <img
             src="../assets/figma_components/logo.png"
