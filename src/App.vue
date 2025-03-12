@@ -1,12 +1,14 @@
 <script setup>
-import { RouterView } from 'vue-router';
+import { RouterView, useRoute  } from 'vue-router';
 import CookieBanner from './components/CookieBanner.vue';
 import MainHeader from './fixtures/MainHeader.vue';
 import MainFooter from './fixtures/MainFooter.vue';
+
+const route = useRoute();
 </script>
 
 <template>
-    <MainHeader />
+    <MainHeader v-if="route.name !== 'game'" />
     <CookieBanner />
     <RouterView />
     <MainFooter />

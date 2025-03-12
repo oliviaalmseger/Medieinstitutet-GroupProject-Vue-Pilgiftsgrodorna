@@ -34,7 +34,9 @@ const handleClick = (event) => {
 
     if (props.back) {
         router.back();
-    } else if (!props.to) {
+    } else if (props.to) {
+        router.push(props.to);
+    } else {
         emit('click', event);
     }
 };
