@@ -20,7 +20,7 @@ const frogIsFound = ref(false);
 const hidingFrogRef = ref(null);
 
 const stopTimer = ref(false);
-const timerValue = ref('00:00');
+const timerValue = ref('0 sekunder');
 
 function foundFrog() {
     frogIsFound.value = true;
@@ -49,7 +49,7 @@ const updateTime = (newTime) => {
             class="pop-up"
             heading="Grattis!"
             content="Du hittade grodan!"
-            :timer="'Det tog dig ' + timerValue + ' sekunder att hitta grodan!'"
+            :timer="'Det tog dig ' + timerValue + ' att hitta grodan!'"
             :image="RedFrog"
             imageClass="red-frog"
             closeButton="Spela igen"
