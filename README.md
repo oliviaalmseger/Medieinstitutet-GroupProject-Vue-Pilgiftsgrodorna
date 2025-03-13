@@ -25,13 +25,17 @@ But when we inherited the Poison Dart Frogs’ repo, an identity crisis hit us�
 
 ## 📸 Screenshots 
 **Start page - Desktop**
-![Start page - Desktop](src/assets/screenshots/desktopstart.png)
+![desktopstart](https://github.com/user-attachments/assets/4bca9168-b026-4bed-a3d5-f2bd6243f960)
+
 **Contact page - Desktop**
-![Contact page - Desktop](src/assets/screenshots/desktopcontact.png)
+![desktopcontact](https://github.com/user-attachments/assets/d521252b-0079-478c-99cc-3b36b108261e)
+
 **Game Lobby page - Desktop**
-![Game Lobby page - Desktop](src/assets/screenshots/desktoppregame.png)
+![desktoppregame](https://github.com/user-attachments/assets/7cfcb6d5-f90e-44c2-9724-dd4309baf071)
+
 **Game page - Desktop**
-![Game page - Desktop](src/assets/screenshots/desktopgame.png)
+![desktopgame](https://github.com/user-attachments/assets/212e1f2c-52fb-48f8-925b-715d9eebf177)
+
 
 
 ## 🧑‍💻 Tech Stack 
@@ -115,7 +119,7 @@ pnpm build
 ## 🚦 Lighthouse analysis 
 
 **Lighthouse report**
-![Lighthouse report](src/assets/screenshots/desktoplighthouse.png)
+![desktoplighthouse](https://github.com/user-attachments/assets/b6ab2746-c75b-4e29-a7a1-b695889e5676)
 
 
 ## ✍️ Authors 
