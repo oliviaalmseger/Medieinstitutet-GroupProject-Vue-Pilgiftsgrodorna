@@ -20,18 +20,18 @@ But when we inherited the Poison Dart Frogs’ repo, an identity crisis hit us�
 
 
 ## 🎥 Demo 
-[Click here to view the demo] (https://medieinstitutet.github.io/fed24d-grafiska-verktyg-pilgiftsgrodorna/)
-
+[Click here to view the demo](https://medieinstitutet.github.io/fed24d-grafiska-verktyg-pilgiftsgrodorna/)
+  
 
 ## 📸 Screenshots 
 **Start page - Desktop**
-![Start page - Desktop](src/assets/screenshots/desktopStart.png)
+![Start page - Desktop](src/assets/screenshots/desktopstart.png)
 **Contact page - Desktop**
-![Contact page - Desktop](src/assets/screenshots/desktopContact.png)
+![Contact page - Desktop](src/assets/screenshots/desktopcontact.png)
 **Game Lobby page - Desktop**
-![Game Lobby page - Desktop](src/assets/screenshots/desktopPreGame.png)
+![Game Lobby page - Desktop](src/assets/screenshots/desktoppregame.png)
 **Game page - Desktop**
-![Game page - Desktop](src/assets/screenshots/desktopGame.png)
+![Game page - Desktop](src/assets/screenshots/desktopgame.png)
 
 
 ## 🧑‍💻 Tech Stack 
@@ -115,7 +115,7 @@ pnpm build
 ## 🚦 Lighthouse analysis 
 
 **Lighthouse report**
-![Lighthouse report](src/assets/screenshots/desktopLighthouse.png)
+![Lighthouse report](src/assets/screenshots/desktoplighthouse.png)
 
 
 ## ✍️ Authors 
